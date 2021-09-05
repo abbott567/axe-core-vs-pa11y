@@ -28,6 +28,25 @@ Spoiler alert, all automated tools perform poorly. This doesn't mean we shouldn'
 
 You can [read more about the worlds-least accessible webpage on the GDS accessibility blog](https://accessibility.blog.gov.uk/2017/02/24/what-we-found-when-we-tested-tools-on-the-worlds-least-accessible-webpage/)
 
+## Running the tests
+
+The test files are all available in the results folder, however if you want to re-run the tests, first clone the project and use the command:
+```
+npm install
+```
+
+Next, delete all the JSON files in the results folders. Do not delete the folders themselves or the tests will fail.
+
+To run the tests you can use one of the following commands:
+```
+npm test
+npm start
+```
+
+Axe-core runs using Selenium and ChromeDriver. This can sometimes be a bit flakey depending on which version of Google Chrome you have installed and how old this project is when you come to run it.
+
+Once the tests have finished the JSON data will be in the results folder.
+
 ## Interpreting the test outputs
 
 Axe-core returns an object with 3 categories. Passed, incomplete and violations. 
