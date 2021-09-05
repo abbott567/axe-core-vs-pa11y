@@ -1,76 +1,81 @@
 # Axe-core vs Pa11y
 
-We use axe-core by Deque regularly as part of acceptance tests. With GitLab now offering PA11Y as part of the Continuous Integration (CI) Pipeline with zero config, I wanted to understand how it stacked up against axe-core. Can you drop axe-core for PA11Y? Can you drop PA11Y for axe-core? Should you use both?
-
-## Conclusion
-
-Both tools find issues which the other does not. Therefore you cannot favour one over the other.
-
-From these tests, I would recommend using both axe-core and PA11Y in your acceptance tests.
-
-## Overview of findings
-
-Axe-core found 39 issues of 142 in total. 36 violations and 3 which required a user to check. 
-
-PA11Y found 29 of 142 issues in total.
-
-19 issues were found by both tools. 
-
-20 issues were found by axe-core but not PA11y.
-
-10 issues were found by PA11Y but not axe-core.
-
-## Testing method
-
-To test the two tools, I set up a simple test suite using Mocha and threw both tools at [the worlds least-accessible webpage](https://alphagov.github.io/accessibility-tool-audit/test-cases.html). The page is deliberately terrible. It has 142 known accessibility issues, so it is a good benchmark to see how automated tools perform. 
+We use [axe-core](https://www.npmjs.com/package/axe-core) by [Deque](https://www.deque.com/) regularly as part of acceptance tests. With [GitLab](https://docs.gitlab.com/ee/user/project/merge_requests/accessibility_testing.html) now offering [PA11Y](https://www.npmjs.com/package/pa11y) as part of the Continuous Integration (CI) Pipeline with zero config, I wanted to understand how it stacked up against axe-core. Can you drop axe-core for PA11Y? Can you drop PA11Y for axe-core? Should you use both?
 
 Spoiler alert, all automated tools perform poorly. This doesn't mean we shouldn't use them. But we need to remain realistic about how many errors we may still have on our pages, even if the tools can't find them.
 
-You can [read more about the worlds-least accessible webpage on the GDS accessibility blog](https://accessibility.blog.gov.uk/2017/02/24/what-we-found-when-we-tested-tools-on-the-worlds-least-accessible-webpage/)
+## Summary of results
 
-## Running the tests
+Out of 142 issues tested:
 
-The test files are all available in the results folder, however if you want to re-run the tests, first clone the project and use the command:
-```
-npm install
-```
+Axe-core found 39 issues in total, or 27%. 36 were violations and 3 were potential issues which required a user to check manually.
 
-Next, delete all the JSON files in the results folders. Do not delete the folders themselves or the tests will fail.
+PA11Y found 29 issues in total, or 20%.
 
-To run the tests you can use one of the following commands:
-```
-npm test
-npm start
-```
+19 issues (13%) were found by both tools. 
 
-Axe-core runs using Selenium and ChromeDriver. This can sometimes be a bit flakey depending on which version of Google Chrome you have installed and how old this project is when you come to run it.
+20 issues (14%) were found by axe-core but not PA11y.
 
-Once the tests have finished the JSON data will be in the results folder.
+10 issues (7%) were found by PA11Y but not axe-core.
 
-## Interpreting the test outputs
+Combined, 49 issues (35%) were found.
+
+## Conclusion
+
+Although both tools find a lot of the same issues, some issues are found by one tool but not the other. Therefore I do not think you can favour one tool over the other. 
+
+I also do not think we can assume axe-core is better than PA11Y because it finds more issues, as the issues tested in this set of tests might just happen to play to axe-core's strengths. It's very likely that PA11Y might outperform axe-core on a different set of tests.
+
+What is clear from the results, is that each tool definitely finds things which the other does not. Therefore, from these tests, I would recommend using both axe-core and PA11Y in your acceptance tests. By using both you can expect to find around 35% of known issues.
+
+## Method
+
+Testing automated tools is always going to be difficult. There are so many ways to make something inaccessible that designing a tool or a test to find everything is probably impossible. 
+
+So, to compare the two tools, I set up a simple test suite using Mocha and had each tool evaluate [the worlds least-accessible webpage](https://alphagov.github.io/accessibility-tool-audit/test-cases.html). The page is deliberately terrible. It has 142 known accessibility issues, so it is a good benchmark to see how automated tools perform. 
+
+You can [read more about the worlds-least accessible webpage on the GDS accessibility blog](https://accessibility.blog.gov.uk/2017/02/24/what-we-found-when-we-tested-tools-on-the-worlds-least-accessible-webpage/).
+
+## Interpreting the results
+
+The two tools do not report on issues in the exact same way. Axe-core finds issues and potential issues, PA11Y just finds issues or no issues. For the purposes of the test, if axe-core asks the user to manually check it, I'm still saying it found the issue.
+
+### Interpreting axe-core results
 
 Axe-core returns an object with 3 categories. Passed, incomplete and violations. 
 
-Violations are definite fails. Incomplete means the test could not reach an outcome and the user must check it.
+Passed is what the tool checked and found to be ok. Violations are what the tool found to be definite issues. Incomplete is when the tool could not reach a decision on whether it was ok or not. For issues in the incomplete category, the user must manually check them.
 
+For example:
 ```javascript
-incomplete: [], // Tests axe-core could not complete and the user must check
-voilations: [] // Tests axe-core failed as accessibility issues
+{
+  passed: [],     // Tests axe-core passed as non-issues
+  incomplete: [], // Tests axe-core could not complete and the user must check
+  voilations: []  // Tests axe-core failed as accessibility issues
+}
 ```
 
-PA11Y returns an object with only 1 category. Issues.
+### Interpreting PA11Y results
+PA11Y returns an object with only 1 category which it calls issues. So unlike axe-core, PA11Y does not raise things for the user to check manually. It just finds issues, or it does not.
 
+For example:
 ```javascript
-issues: [] // Tests which either failed or require a user input
+{
+  issues: [] // Tests which either failed or require a user input
+}
 ```
 
 ## Anomalies
 
+There were a few anomalies between running these axe-core tests in 2021 and comparing them to the original 2016 GDS tests.
+
+In the 2016 GDS tests, it is not clear if it was axe-core or Axe DevTools which was used. I assume it to be Axe DevTools which is a Chrome extension. However, they both use the same engine so the results should be the same. 
+
 In the 2016 GDS tests, Axe found 43 issues in total, made up of 41 violations and 2 issues which required the user to check. 
 
-In these 2021 tests, axe-core only found 39 issues in total, made up of 36 violations and 3 issues which required the user to check.
+This is higher than in my tests. In my 2021 tests, axe-core only found 39 issues in total, made up of 36 violations and 3 issues which required the user to check.
 
-This could be due to different versions of the tools being used, meaning Axe itself has possibly regressed, or there are human errors when recording the tests.
+This could be due to different versions of the tools being used, meaning Axe itself has possibly regressed, or it is simply human error when recording the tests.
 
 ### Table has no table headings 
 - 2016 Axe found the issue
@@ -106,6 +111,25 @@ This could be due to different versions of the tools being used, meaning Axe its
 - 2016 Axe found the issue
 - 2021 axe-core flags it for user review
 - 2021 Axe DevTools flags it for user review
+
+## Running the tests
+
+The test files are all available in the results folder, however if you want to re-run the tests, first clone the project and use the command:
+```
+npm install
+```
+
+Next, delete all the JSON files in the results folders. Do not delete the folders themselves or the tests will fail.
+
+To run the tests you can use one of the following commands:
+```
+npm test
+npm start
+```
+
+Axe-core runs using Selenium and ChromeDriver. This can sometimes be a bit flakey depending on which version of Google Chrome you have installed and how old this project is when you come to run it.
+
+Once the tests have finished the JSON data will be in the results folder.
 
 ## Table of results
 | Test case | axe-core | PA11Y |
