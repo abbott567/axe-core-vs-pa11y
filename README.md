@@ -89,7 +89,7 @@ This could be due to different versions of the tools being used, meaning Axe its
 
 ### Embedded audio file is missing text alternative
 - 2016 Axe flags it for user review
-- 2021 axe-core does not find the user
+- 2021 axe-core does not find the issue
 - 2021 Axe DevTools does not find the issue
 
 ### Link to #, invalid hypertext reference
