@@ -1,0 +1,159 @@
+{
+  "incomplete": [
+    {
+      "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+      "help": "Elements must have sufficient color contrast",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/color-contrast?application=webdriverjs",
+      "id": "color-contrast",
+      "impact": "serious",
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "bgColor": null,
+                "contrastRatio": 0,
+                "expectedContrastRatio": "4.5:1",
+                "fgColor": "#0b0c0c",
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "shadowColor": null
+              },
+              "id": "color-contrast",
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image",
+              "relatedNodes": [
+                {
+                  "html": "<li><a href=\"/\">Home</a></li>",
+                  "target": [
+                    "li:nth-child(1)"
+                  ]
+                }
+              ]
+            }
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+          "html": "<a href=\"/\">Home</a>",
+          "impact": "serious",
+          "none": [],
+          "target": [
+            "a[href=\"\\/\"]"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "bgColor": null,
+                "contrastRatio": 0,
+                "expectedContrastRatio": "4.5:1",
+                "fgColor": "#0b0c0c",
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "shadowColor": null
+              },
+              "id": "color-contrast",
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image",
+              "relatedNodes": [
+                {
+                  "html": "<li><a href=\"/browse/housing-local-services\">Housing and local services</a></li>",
+                  "target": [
+                    "li:nth-child(2)"
+                  ]
+                }
+              ]
+            }
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+          "html": "<a href=\"/browse/housing-local-services\">Housing and local services</a>",
+          "impact": "serious",
+          "none": [],
+          "target": [
+            "a[href$=\"housing-local-services\"]"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143"
+      ]
+    }
+  ],
+  "voilations": [
+    {
+      "description": "Ensures all elements with a role attribute use a valid value",
+      "help": "ARIA roles used must conform to valid values",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/aria-roles?application=webdriverjs",
+      "id": "aria-roles",
+      "impact": "critical",
+      "nodes": [
+        {
+          "all": [],
+          "any": [],
+          "failureSummary": "Fix all of the following:\n  Role must be one of the valid ARIA roles: breadcrumbs",
+          "html": "<ol class=\"group\" role=\"breadcrumbs\">\n<li><a href=\"/\">Home</a></li>\n<li><a href=\"/browse/housing-local-services\">Housing and local services</a></li>\n<li><strong><a href=\"/browse/housing-local-services/local-councils\">Local councils and services</a></strong></li>\n</ol>",
+          "impact": "critical",
+          "none": [
+            {
+              "data": [
+                "breadcrumbs"
+              ],
+              "id": "invalidrole",
+              "impact": "critical",
+              "message": "Role must be one of the valid ARIA roles: breadcrumbs",
+              "relatedNodes": []
+            }
+          ],
+          "target": [
+            "ol"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412"
+      ]
+    },
+    {
+      "description": "Ensures all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/region?application=webdriverjs",
+      "id": "region",
+      "impact": "moderate",
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "isIframe": false
+              },
+              "id": "region",
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks",
+              "relatedNodes": []
+            }
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+          "html": "<h1>Invalid ARIA role names</h1>",
+          "impact": "moderate",
+          "none": [],
+          "target": [
+            "h1"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ]
+    }
+  ]
+}

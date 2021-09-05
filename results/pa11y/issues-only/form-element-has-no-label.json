@@ -1,0 +1,32 @@
+[
+  {
+    "code": "WCAG2AA.Principle3.Guideline3_2.3_2_2.H32.2",
+    "type": "error",
+    "typeCode": 1,
+    "message": "This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute \"submit\" or \"image\", or BUTTON elements with type \"submit\" or omitted/invalid.",
+    "context": "<form><input type=\"text\"></form>",
+    "selector": "html > body > main > form",
+    "runner": "htmlcs",
+    "runnerExtras": {}
+  },
+  {
+    "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputText.Name",
+    "type": "error",
+    "typeCode": 1,
+    "message": "This textinput element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+    "context": "<input type=\"text\">",
+    "selector": "html > body > main > form > input",
+    "runner": "htmlcs",
+    "runnerExtras": {}
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+    "type": "error",
+    "typeCode": 1,
+    "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+    "context": "<input type=\"text\">",
+    "selector": "html > body > main > form > input",
+    "runner": "htmlcs",
+    "runnerExtras": {}
+  }
+]

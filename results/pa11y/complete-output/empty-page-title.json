@@ -1,0 +1,36 @@
+{
+  "documentTitle": "",
+  "pageUrl": "https://alphagov.github.io/accessibility-tool-audit/example-pages/empty.html",
+  "issues": [
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_4.2_4_2.H25.1.EmptyTitle",
+      "type": "error",
+      "typeCode": 1,
+      "message": "The title element in the head section should be non-empty.",
+      "context": "<title></title>",
+      "selector": "html > head > title",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle3.Guideline3_1.3_1_1.H57.3.Lang",
+      "type": "error",
+      "typeCode": 1,
+      "message": "The language specified in the lang attribute of the document element does not appear to be well-formed.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.H42.2",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Heading tag found with no content. Text that is not intended as a heading should not be marked up with heading tags.",
+      "context": "<h1></h1>",
+      "selector": "html > body > h1",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    }
+  ]
+}

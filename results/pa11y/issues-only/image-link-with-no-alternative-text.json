@@ -1,0 +1,12 @@
+[
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H30.2",
+    "type": "error",
+    "typeCode": 1,
+    "message": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+    "context": "<a href=\"http://www.bbc.co.uk\"><img alt=\"\" src=\"../assets/test...</a>",
+    "selector": "html > body > main > a",
+    "runner": "htmlcs",
+    "runnerExtras": {}
+  }
+]

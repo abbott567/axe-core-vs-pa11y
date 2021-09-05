@@ -1,0 +1,12 @@
+[
+  {
+    "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Button.Name",
+    "type": "error",
+    "typeCode": 1,
+    "message": "This button element does not have a name available to an accessibility API. Valid names are: title undefined, element content, aria-label undefined, aria-labelledby undefined.",
+    "context": "<button></button>",
+    "selector": "html > body > main > button",
+    "runner": "htmlcs",
+    "runnerExtras": {}
+  }
+]

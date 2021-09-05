@@ -1,0 +1,105 @@
+{
+  "incomplete": [],
+  "voilations": [
+    {
+      "description": "Ensures buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/button-name?application=webdriverjs",
+      "id": "button-name",
+      "impact": "critical",
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": null,
+              "id": "button-has-visible-text",
+              "impact": "critical",
+              "message": "Element does not have inner text that is visible to screen readers",
+              "relatedNodes": []
+            },
+            {
+              "data": null,
+              "id": "aria-label",
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty",
+              "relatedNodes": []
+            },
+            {
+              "data": null,
+              "id": "aria-labelledby",
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+              "relatedNodes": []
+            },
+            {
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "id": "non-empty-title",
+              "impact": "serious",
+              "message": "Element has no title attribute",
+              "relatedNodes": []
+            },
+            {
+              "data": null,
+              "id": "presentational-role",
+              "impact": "minor",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+              "relatedNodes": []
+            }
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+          "html": "<button></button>",
+          "impact": "critical",
+          "none": [],
+          "target": [
+            "button"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "ACT"
+      ]
+    },
+    {
+      "description": "Ensures all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/region?application=webdriverjs",
+      "id": "region",
+      "impact": "moderate",
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "isIframe": false
+              },
+              "id": "region",
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks",
+              "relatedNodes": []
+            }
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+          "html": "<h1>Empty button</h1>",
+          "impact": "moderate",
+          "none": [],
+          "target": [
+            "h1"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "documentTitle": "Accessibility tools audit test - Blink element found - GDS accessibility team",
+  "pageUrl": "https://alphagov.github.io/accessibility-tool-audit/tests/typography-blink-element-found.html",
+  "issues": [
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_2.2_2_2.F47",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Blink elements cannot satisfy the requirement that blinking information can be stopped within five seconds.",
+      "context": "<blink>Blinking text and moving text (...</blink>",
+      "selector": "html > body > main > blink",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    }
+  ]
+}

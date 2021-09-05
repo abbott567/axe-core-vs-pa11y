@@ -1,0 +1,26 @@
+{
+  "documentTitle": "Accessibility tools audit test - Image button has no alt attribute - GDS accessibility team",
+  "pageUrl": "https://alphagov.github.io/accessibility-tool-audit/tests/buttons-image-button-has-no-alt-attribute.html",
+  "issues": [
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H36",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Image submit button missing an alt attribute. Specify a text alternative that describes the button's function, using the alt attribute.",
+      "context": "<input src=\"../assets/test_images/submit.png\" type=\"image\">",
+      "selector": "html > body > main > input",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputImage.Name",
+      "type": "error",
+      "typeCode": 1,
+      "message": "This imageinput element does not have a name available to an accessibility API. Valid names are: alt undefined, title undefined, aria-label undefined, aria-labelledby undefined.",
+      "context": "<input src=\"../assets/test_images/submit.png\" type=\"image\">",
+      "selector": "html > body > main > input",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "documentTitle": "Accessibility tools audit test - Table nested within table header - GDS accessibility team",
+  "pageUrl": "https://alphagov.github.io/accessibility-tool-audit/tests/tables-table-nested-within-table-header.html",
+  "issues": [
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.H43,H63",
+      "type": "error",
+      "typeCode": 1,
+      "message": "The relationship between td elements and their associated th elements is not defined. Use either the scope attribute on th elements, or the headers attribute on td elements.",
+      "context": "<table>\n<tbody><tr>\n<th>Item</th>\n<th>...</table>",
+      "selector": "html > body > main > table",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    }
+  ]
+}

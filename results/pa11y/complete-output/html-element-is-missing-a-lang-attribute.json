@@ -1,0 +1,26 @@
+{
+  "documentTitle": "",
+  "pageUrl": "https://alphagov.github.io/accessibility-tool-audit/example-pages/missing.html",
+  "issues": [
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_4.2_4_2.H25.1.NoTitleEl",
+      "type": "error",
+      "typeCode": 1,
+      "message": "A title should be provided for the document, using a non-empty title element in the head section.",
+      "context": "<head>\n</head>",
+      "selector": "html > head",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle3.Guideline3_1.3_1_1.H57.2",
+      "type": "error",
+      "typeCode": 1,
+      "message": "The html element should have a lang or xml:lang attribute which describes the language of the document.",
+      "context": "<html><head>\n</head>\n<body>\n  <div cl...</html>",
+      "selector": "html",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    }
+  ]
+}

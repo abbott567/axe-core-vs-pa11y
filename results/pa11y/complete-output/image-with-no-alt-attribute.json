@@ -1,0 +1,16 @@
+{
+  "documentTitle": "Accessibility tools audit test - Image with no alt attribute - GDS accessibility team",
+  "pageUrl": "https://alphagov.github.io/accessibility-tool-audit/tests/images-image-with-no-alt-attribute.html",
+  "issues": [
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H37",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+      "context": "<img src=\"../assets/test_images/bbc-blocks-dark.png\">",
+      "selector": "html > body > main > img",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.H39.3.LayoutTable",
+    "type": "error",
+    "typeCode": 1,
+    "message": "This table appears to be used for layout, but contains a caption element. Layout tables must not contain captions.",
+    "context": "<table>\n<caption>Shelly's Daughters</c...</table>",
+    "selector": "html > body > main > table",
+    "runner": "htmlcs",
+    "runnerExtras": {}
+  }
+]

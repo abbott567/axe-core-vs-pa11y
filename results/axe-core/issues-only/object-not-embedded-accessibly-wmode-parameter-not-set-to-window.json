@@ -1,0 +1,147 @@
+{
+  "incomplete": [
+    {
+      "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+      "help": "Elements must have sufficient color contrast",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/color-contrast?application=webdriverjs",
+      "id": "color-contrast",
+      "impact": "serious",
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "bgColor": null,
+                "contrastRatio": 0,
+                "expectedContrastRatio": "4.5:1",
+                "fgColor": "#000000",
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "shadowColor": null
+              },
+              "id": "color-contrast",
+              "impact": "serious",
+              "message": "Element's background color could not be determined because element contains an image node",
+              "relatedNodes": [
+                {
+                  "html": "<object data=\"foo\"><param name=\"wmode\" value=\"transparent\">Alternative text</object>",
+                  "target": [
+                    "object"
+                  ]
+                }
+              ]
+            }
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node",
+          "html": "<object data=\"foo\"><param name=\"wmode\" value=\"transparent\">Alternative text</object>",
+          "impact": "serious",
+          "none": [],
+          "target": [
+            "object"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143"
+      ]
+    }
+  ],
+  "voilations": [
+    {
+      "description": "Ensures <object> elements have alternate text",
+      "help": "<object> elements must have alternate text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/object-alt?application=webdriverjs",
+      "id": "object-alt",
+      "impact": "serious",
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": null,
+              "id": "aria-label",
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty",
+              "relatedNodes": []
+            },
+            {
+              "data": null,
+              "id": "aria-labelledby",
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+              "relatedNodes": []
+            },
+            {
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "id": "non-empty-title",
+              "impact": "serious",
+              "message": "Element has no title attribute",
+              "relatedNodes": []
+            },
+            {
+              "data": null,
+              "id": "presentational-role",
+              "impact": "minor",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+              "relatedNodes": []
+            }
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+          "html": "<object data=\"foo\"><param name=\"wmode\" value=\"transparent\">Alternative text</object>",
+          "impact": "serious",
+          "none": [],
+          "target": [
+            "object"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a"
+      ]
+    },
+    {
+      "description": "Ensures all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/region?application=webdriverjs",
+      "id": "region",
+      "impact": "moderate",
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "isIframe": false
+              },
+              "id": "region",
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks",
+              "relatedNodes": []
+            }
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+          "html": "<h1>Object not embedded accessibly - wmode parameter not set to window</h1>",
+          "impact": "moderate",
+          "none": [],
+          "target": [
+            "h1"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ]
+    }
+  ]
+}

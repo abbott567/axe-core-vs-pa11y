@@ -1,0 +1,16 @@
+{
+  "documentTitle": "Accessibility tools audit test - iframe is missing a title attribute - GDS accessibility team",
+  "pageUrl": "https://alphagov.github.io/accessibility-tool-audit/tests/frames-iframe-is-missing-a-title-attribute.html",
+  "issues": [
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_4.2_4_1.H64.1",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Iframe element requires a non-empty title attribute that identifies the frame.",
+      "context": "<iframe height=\"100\" src=\"../example-pages/demo.html\" width=\"300\"></iframe>",
+      "selector": "html > body > main > iframe",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    }
+  ]
+}

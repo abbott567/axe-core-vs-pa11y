@@ -1,0 +1,12 @@
+[
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H67.1",
+    "type": "error",
+    "typeCode": 1,
+    "message": "Img element with empty alt text must have absent or empty title attribute.",
+    "context": "<img alt=\"\" src=\"../assets/test_images/bbc-blocks-dark.png\" title=\"BBC\">",
+    "selector": "html > body > main > img",
+    "runner": "htmlcs",
+    "runnerExtras": {}
+  }
+]

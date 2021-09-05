@@ -1,0 +1,3784 @@
+{
+  "inapplicable": [
+    {
+      "description": "Ensures every accesskey attribute value is unique",
+      "help": "accesskey attribute value should be unique",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/accesskeys?application=webdriverjs",
+      "id": "accesskeys",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ]
+    },
+    {
+      "description": "Ensures <area> elements of image maps have alternate text",
+      "help": "Active <area> elements must have alternate text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/area-alt?application=webdriverjs",
+      "id": "area-alt",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "ACT"
+      ]
+    },
+    {
+      "description": "Ensures every ARIA button, link and menuitem has an accessible name",
+      "help": "ARIA commands must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/aria-command-name?application=webdriverjs",
+      "id": "aria-command-name",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412"
+      ]
+    },
+    {
+      "description": "Ensures every ARIA dialog and alertdialog node has an accessible name",
+      "help": "ARIA dialog and alertdialog nodes should have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/aria-dialog-name?application=webdriverjs",
+      "id": "aria-dialog-name",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ]
+    },
+    {
+      "description": "Ensures every ARIA input field has an accessible name",
+      "help": "ARIA input fields must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/aria-input-field-name?application=webdriverjs",
+      "id": "aria-input-field-name",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "ACT"
+      ]
+    },
+    {
+      "description": "Ensures every ARIA meter node has an accessible name",
+      "help": "ARIA meter nodes must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/aria-meter-name?application=webdriverjs",
+      "id": "aria-meter-name",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag111"
+      ]
+    },
+    {
+      "description": "Ensures every ARIA progressbar node has an accessible name",
+      "help": "ARIA progressbar nodes must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/aria-progressbar-name?application=webdriverjs",
+      "id": "aria-progressbar-name",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag111"
+      ]
+    },
+    {
+      "description": "Ensures elements with an ARIA role that require child roles contain them",
+      "help": "Certain ARIA roles must contain particular children",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/aria-required-children?application=webdriverjs",
+      "id": "aria-required-children",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag131"
+      ]
+    },
+    {
+      "description": "Ensures elements with an ARIA role that require parent roles are contained by them",
+      "help": "Certain ARIA roles must be contained by particular parents",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/aria-required-parent?application=webdriverjs",
+      "id": "aria-required-parent",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag131"
+      ]
+    },
+    {
+      "description": "Ensure aria-roledescription is only used on elements with an implicit or explicit role",
+      "help": "Use aria-roledescription on elements with a semantic role",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/aria-roledescription?application=webdriverjs",
+      "id": "aria-roledescription",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412"
+      ]
+    },
+    {
+      "description": "Ensures \"role=text\" is used on elements with no focusable descendants",
+      "help": "\"role=text\" should have no focusable descendants",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/aria-text?application=webdriverjs",
+      "id": "aria-text",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ]
+    },
+    {
+      "description": "Ensures every ARIA toggle field has an accessible name",
+      "help": "ARIA toggle fields have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/aria-toggle-field-name?application=webdriverjs",
+      "id": "aria-toggle-field-name",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "ACT"
+      ]
+    },
+    {
+      "description": "Ensures every ARIA tooltip node has an accessible name",
+      "help": "ARIA tooltip nodes must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/aria-tooltip-name?application=webdriverjs",
+      "id": "aria-tooltip-name",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412"
+      ]
+    },
+    {
+      "description": "Ensures every ARIA treeitem node has an accessible name",
+      "help": "ARIA treeitem nodes should have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/aria-treeitem-name?application=webdriverjs",
+      "id": "aria-treeitem-name",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ]
+    },
+    {
+      "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
+      "help": "autocomplete attribute must be used correctly",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/autocomplete-valid?application=webdriverjs",
+      "id": "autocomplete-valid",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.forms",
+        "wcag21aa",
+        "wcag135"
+      ]
+    },
+    {
+      "description": "Ensures <blink> elements are not used",
+      "help": "<blink> elements are deprecated and must not be used",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/blink?application=webdriverjs",
+      "id": "blink",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.time-and-media",
+        "wcag2a",
+        "wcag222",
+        "section508",
+        "section508.22.j"
+      ]
+    },
+    {
+      "description": "Ensures buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/button-name?application=webdriverjs",
+      "id": "button-name",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "ACT"
+      ]
+    },
+    {
+      "description": "Ensures <dl> elements are structured correctly",
+      "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/definition-list?application=webdriverjs",
+      "id": "definition-list",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131"
+      ]
+    },
+    {
+      "description": "Ensures <dt> and <dd> elements are contained by a <dl>",
+      "help": "<dt> and <dd> elements must be contained by a <dl>",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/dlitem?application=webdriverjs",
+      "id": "dlitem",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131"
+      ]
+    },
+    {
+      "description": "Ensures table headers have discernible text",
+      "help": "Table header text must not be empty",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/empty-table-header?application=webdriverjs",
+      "id": "empty-table-header",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "wcag131",
+        "cat.aria"
+      ]
+    },
+    {
+      "description": "Ensures form field does not have multiple label elements",
+      "help": "Form field must not have multiple label elements",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/form-field-multiple-labels?application=webdriverjs",
+      "id": "form-field-multiple-labels",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.forms",
+        "wcag2a",
+        "wcag332"
+      ]
+    },
+    {
+      "description": "Ensures <frame> and <iframe> elements with focusable content do not have tabindex=-1",
+      "help": "Frames with focusable content must not have tabindex=-1",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/frame-focusable-content?application=webdriverjs",
+      "id": "frame-focusable-content",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.keyboard",
+        "wcag2a",
+        "wcag211"
+      ]
+    },
+    {
+      "description": "Ensure that HTML elements with both valid lang and xml:lang attributes agree on the base language of the page",
+      "help": "HTML elements with lang and xml:lang must have the same base language",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/html-xml-lang-mismatch?application=webdriverjs",
+      "id": "html-xml-lang-mismatch",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.language",
+        "wcag2a",
+        "wcag311",
+        "ACT"
+      ]
+    },
+    {
+      "description": "Ensures <img> elements have alternate text or a role of none or presentation",
+      "help": "Images must have alternate text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/image-alt?application=webdriverjs",
+      "id": "image-alt",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "ACT"
+      ]
+    },
+    {
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/image-redundant-alt?application=webdriverjs",
+      "id": "image-redundant-alt",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ]
+    },
+    {
+      "description": "Ensures input buttons have discernible text",
+      "help": "Input buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/input-button-name?application=webdriverjs",
+      "id": "input-button-name",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a"
+      ]
+    },
+    {
+      "description": "Ensures <input type=\"image\"> elements have alternate text",
+      "help": "Image buttons must have alternate text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/input-image-alt?application=webdriverjs",
+      "id": "input-image-alt",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "ACT"
+      ]
+    },
+    {
+      "description": "Ensures that every form element is not solely labeled using the title or aria-describedby attributes",
+      "help": "Form elements should have a visible label",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/label-title-only?application=webdriverjs",
+      "id": "label-title-only",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.forms",
+        "best-practice"
+      ]
+    },
+    {
+      "description": "Ensures every form element has a label",
+      "help": "Form elements must have labels",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/label?application=webdriverjs",
+      "id": "label",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.forms",
+        "wcag2a",
+        "wcag412",
+        "wcag131",
+        "section508",
+        "section508.22.n",
+        "ACT"
+      ]
+    },
+    {
+      "description": "Ensures the banner landmark is at top level",
+      "help": "Banner landmark should not be contained in another landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/landmark-banner-is-top-level?application=webdriverjs",
+      "id": "landmark-banner-is-top-level",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ]
+    },
+    {
+      "description": "Ensures the complementary landmark or aside is at top level",
+      "help": "Aside should not be contained in another landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/landmark-complementary-is-top-level?application=webdriverjs",
+      "id": "landmark-complementary-is-top-level",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ]
+    },
+    {
+      "description": "Ensures the contentinfo landmark is at top level",
+      "help": "Contentinfo landmark should not be contained in another landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/landmark-contentinfo-is-top-level?application=webdriverjs",
+      "id": "landmark-contentinfo-is-top-level",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ]
+    },
+    {
+      "description": "Ensures the document has at most one banner landmark",
+      "help": "Document should not have more than one banner landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/landmark-no-duplicate-banner?application=webdriverjs",
+      "id": "landmark-no-duplicate-banner",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ]
+    },
+    {
+      "description": "Ensures the document has at most one contentinfo landmark",
+      "help": "Document should not have more than one contentinfo landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/landmark-no-duplicate-contentinfo?application=webdriverjs",
+      "id": "landmark-no-duplicate-contentinfo",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ]
+    },
+    {
+      "description": "Ensures that lists are structured correctly",
+      "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/list?application=webdriverjs",
+      "id": "list",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131"
+      ]
+    },
+    {
+      "description": "Ensures <li> elements are used semantically",
+      "help": "<li> elements must be contained in a <ul> or <ol>",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/listitem?application=webdriverjs",
+      "id": "listitem",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131"
+      ]
+    },
+    {
+      "description": "Ensures <marquee> elements are not used",
+      "help": "<marquee> elements are deprecated and must not be used",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/marquee?application=webdriverjs",
+      "id": "marquee",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.parsing",
+        "wcag2a",
+        "wcag222"
+      ]
+    },
+    {
+      "description": "Ensures <meta http-equiv=\"refresh\"> is not used",
+      "help": "Timed refresh must not exist",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/meta-refresh?application=webdriverjs",
+      "id": "meta-refresh",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.time-and-media",
+        "wcag2a",
+        "wcag2aaa",
+        "wcag221",
+        "wcag224",
+        "wcag325"
+      ]
+    },
+    {
+      "description": "Ensures <meta name=\"viewport\"> can scale a significant amount",
+      "help": "Users should be able to zoom and scale the text up to 500%",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/meta-viewport-large?application=webdriverjs",
+      "id": "meta-viewport-large",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.sensory-and-visual-cues",
+        "best-practice"
+      ]
+    },
+    {
+      "description": "Ensures <meta name=\"viewport\"> does not disable text scaling and zooming",
+      "help": "Zooming and scaling should not be disabled",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/meta-viewport?application=webdriverjs",
+      "id": "meta-viewport",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.sensory-and-visual-cues",
+        "best-practice",
+        "ACT"
+      ]
+    },
+    {
+      "description": "Nested interactive controls are not announced by screen readers",
+      "help": "Ensure interactive controls are not nested",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/nested-interactive?application=webdriverjs",
+      "id": "nested-interactive",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.keyboard",
+        "wcag2a",
+        "wcag412"
+      ]
+    },
+    {
+      "description": "Ensures <object> elements have alternate text",
+      "help": "<object> elements must have alternate text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/object-alt?application=webdriverjs",
+      "id": "object-alt",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a"
+      ]
+    },
+    {
+      "description": "Flags elements whose role is none or presentation and which cause the role conflict resolution to trigger.",
+      "help": "Elements of role none or presentation should be flagged",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/presentation-role-conflict?application=webdriverjs",
+      "id": "presentation-role-conflict",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ]
+    },
+    {
+      "description": "Ensures [role='img'] elements have alternate text",
+      "help": "[role='img'] elements have an alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/role-img-alt?application=webdriverjs",
+      "id": "role-img-alt",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "ACT"
+      ]
+    },
+    {
+      "description": "Ensures the scope attribute is used correctly on tables",
+      "help": "scope attribute should be used correctly",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/scope-attr-valid?application=webdriverjs",
+      "id": "scope-attr-valid",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.tables",
+        "best-practice"
+      ]
+    },
+    {
+      "description": "Elements that have scrollable content must be accessible by keyboard",
+      "help": "Ensure that scrollable region has keyboard access",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/scrollable-region-focusable?application=webdriverjs",
+      "id": "scrollable-region-focusable",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.keyboard",
+        "wcag2a",
+        "wcag211"
+      ]
+    },
+    {
+      "description": "Ensures select element has an accessible name",
+      "help": "Select element must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/select-name?application=webdriverjs",
+      "id": "select-name",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.forms",
+        "wcag2a",
+        "wcag412",
+        "wcag131",
+        "section508",
+        "section508.22.n",
+        "ACT"
+      ]
+    },
+    {
+      "description": "Ensures that server-side image maps are not used",
+      "help": "Server-side image maps must not be used",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/server-side-image-map?application=webdriverjs",
+      "id": "server-side-image-map",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag211",
+        "section508",
+        "section508.22.f"
+      ]
+    },
+    {
+      "description": "Ensure all skip links have a focusable target",
+      "help": "The skip-link target should exist and be focusable",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/skip-link?application=webdriverjs",
+      "id": "skip-link",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ]
+    },
+    {
+      "description": "Ensures svg elements with an img, graphics-document or graphics-symbol role have an accessible text",
+      "help": "svg elements with an img role have an alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/svg-img-alt?application=webdriverjs",
+      "id": "svg-img-alt",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "ACT"
+      ]
+    },
+    {
+      "description": "Ensure that tables do not have the same summary and caption",
+      "help": "The <caption> element should not contain the same text as the summary attribute",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/table-duplicate-name?application=webdriverjs",
+      "id": "table-duplicate-name",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.tables",
+        "best-practice"
+      ]
+    },
+    {
+      "description": "Ensure that each cell in a table using the headers refers to another cell in that table",
+      "help": "All cells in a table element that use the headers attribute must only refer to other cells of that same table",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/td-headers-attr?application=webdriverjs",
+      "id": "td-headers-attr",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.tables",
+        "wcag2a",
+        "wcag131",
+        "section508",
+        "section508.22.g"
+      ]
+    },
+    {
+      "description": "Ensure that each table header in a data table refers to data cells",
+      "help": "All th elements and elements with role=columnheader/rowheader must have data cells they describe",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/th-has-data-cells?application=webdriverjs",
+      "id": "th-has-data-cells",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.tables",
+        "wcag2a",
+        "wcag131",
+        "section508",
+        "section508.22.g"
+      ]
+    },
+    {
+      "description": "Ensures lang attributes have valid values",
+      "help": "lang attribute must have a valid value",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/valid-lang?application=webdriverjs",
+      "id": "valid-lang",
+      "impact": null,
+      "nodes": [],
+      "tags": [
+        "cat.language",
+        "wcag2aa",
+        "wcag312"
+      ]
+    }
+  ],
+  "incomplete": [
+    {
+      "description": "Ensures ARIA attributes are allowed for an element's role",
+      "help": "Elements must only use allowed ARIA attributes",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/aria-allowed-attr?application=webdriverjs",
+      "id": "aria-allowed-attr",
+      "impact": "serious",
+      "nodes": [
+        {
+          "all": [],
+          "any": [],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not well supported on the element and the text content will be used instead: aria-label",
+          "html": "<div class=\"html5-video-player ytp-exp-bottom-control-flexbox ytp-embed ytp-embed-playlist ytp-menu-shown ytp-hide-info-bar ytp-embed-error\" tabindex=\"-1\" id=\"movie_player\" data-version=\"/s/player/9da24d97/player_ias.vflset/en_US/base.js\" aria-label=\"YouTube Video Player\">",
+          "impact": "serious",
+          "none": [
+            {
+              "data": [
+                "aria-label"
+              ],
+              "id": "aria-prohibited-attr",
+              "impact": "serious",
+              "message": "ARIA attribute is not well supported on the element and the text content will be used instead: aria-label",
+              "relatedNodes": []
+            }
+          ],
+          "target": [
+            "iframe",
+            "#movie_player"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412"
+      ]
+    },
+    {
+      "description": "Ensures each page has at least one mechanism for a user to bypass navigation and jump straight to the content",
+      "help": "Page must have means to bypass repeated blocks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/bypass?application=webdriverjs",
+      "id": "bypass",
+      "impact": "serious",
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": null,
+              "id": "internal-link-present",
+              "impact": "serious",
+              "message": "No valid skip link found",
+              "relatedNodes": []
+            },
+            {
+              "data": null,
+              "id": "header-present",
+              "impact": "serious",
+              "message": "Page does not have a heading",
+              "relatedNodes": []
+            },
+            {
+              "data": null,
+              "id": "landmark",
+              "impact": "serious",
+              "message": "Page does not have a landmark region",
+              "relatedNodes": []
+            }
+          ],
+          "failureSummary": "Fix any of the following:\n  No valid skip link found\n  Page does not have a heading\n  Page does not have a landmark region",
+          "html": "<html lang=\"en\" dir=\"ltr\" data-cast-api-enabled=\"true\">",
+          "impact": "serious",
+          "none": [],
+          "target": [
+            "iframe",
+            "html"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.keyboard",
+        "wcag2a",
+        "wcag241",
+        "section508",
+        "section508.22.o"
+      ]
+    },
+    {
+      "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+      "help": "Elements must have sufficient color contrast",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/color-contrast?application=webdriverjs",
+      "id": "color-contrast",
+      "impact": "serious",
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "contrastRatio": 0,
+                "expectedContrastRatio": "4.5:1",
+                "fgColor": "#ffffff",
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap"
+              },
+              "id": "color-contrast",
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element",
+              "relatedNodes": []
+            }
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+          "html": "<div class=\"ytp-impression-link-text\">Watch on</div>",
+          "impact": "serious",
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-impression-link-text"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143"
+      ]
+    },
+    {
+      "description": "Ensures <video> elements have captions",
+      "help": "<video> elements must have captions",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/video-caption?application=webdriverjs",
+      "id": "video-caption",
+      "impact": "critical",
+      "nodes": [
+        {
+          "all": [],
+          "any": [],
+          "failureSummary": "Fix all of the following:\n  Check that captions is available for the element",
+          "html": "<video tabindex=\"-1\" class=\"video-stream html5-main-video\" controlslist=\"nodownload\" style=\"width: 560px; height: 315px; left: 0px; top: -315px;\"></video>",
+          "impact": "critical",
+          "none": [
+            {
+              "data": null,
+              "id": "caption",
+              "impact": "critical",
+              "message": "Check that captions is available for the element",
+              "relatedNodes": []
+            }
+          ],
+          "target": [
+            "iframe",
+            "video"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag122",
+        "section508",
+        "section508.22.a"
+      ]
+    }
+  ],
+  "passes": [
+    {
+      "description": "Ensures ARIA attributes are allowed for an element's role",
+      "help": "Elements must only use allowed ARIA attributes",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/aria-allowed-attr?application=webdriverjs",
+      "id": "aria-allowed-attr",
+      "impact": "serious",
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": null,
+              "id": "aria-allowed-attr",
+              "impact": "critical",
+              "message": "ARIA attributes are used correctly for the defined role",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<div class=\"ytp-paid-content-overlay\" aria-live=\"assertive\" aria-atomic=\"true\" data-layer=\"4\"><div class=\"ytp-button ytp-paid-content-overlay-text\" style=\"display: none;\"></div></div>",
+          "impact": null,
+          "none": [
+            {
+              "data": null,
+              "id": "aria-unsupported-attr",
+              "impact": "critical",
+              "message": "ARIA attribute is supported",
+              "relatedNodes": []
+            },
+            {
+              "data": null,
+              "id": "aria-prohibited-attr",
+              "impact": "serious",
+              "message": "ARIA attribute is allowed",
+              "relatedNodes": []
+            }
+          ],
+          "target": [
+            "iframe",
+            ".ytp-paid-content-overlay"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": null,
+              "id": "aria-allowed-attr",
+              "impact": "critical",
+              "message": "ARIA attributes are used correctly for the defined role",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<a class=\"ytp-small-redirect\" href=\"https://www.youtube.com\" target=\"_blank\" aria-label=\"Visit YouTube to search for more videos\">",
+          "impact": null,
+          "none": [
+            {
+              "data": null,
+              "id": "aria-unsupported-attr",
+              "impact": "critical",
+              "message": "ARIA attribute is supported",
+              "relatedNodes": []
+            },
+            {
+              "data": null,
+              "id": "aria-prohibited-attr",
+              "impact": "serious",
+              "message": "ARIA attribute is allowed",
+              "relatedNodes": []
+            }
+          ],
+          "target": [
+            "iframe",
+            ".ytp-small-redirect"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": null,
+              "id": "aria-allowed-attr",
+              "impact": "critical",
+              "message": "ARIA attributes are used correctly for the defined role",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<a class=\"ytp-impression-link\" aria-label=\"Watch on YouTube\" target=\"_blank\" href=\"https://www.youtube.com/watch?v=gwoQRKCEHgY&amp;feature=emb_imp_woyt\" data-layer=\"7\">",
+          "impact": null,
+          "none": [
+            {
+              "data": null,
+              "id": "aria-unsupported-attr",
+              "impact": "critical",
+              "message": "ARIA attribute is supported",
+              "relatedNodes": []
+            },
+            {
+              "data": null,
+              "id": "aria-prohibited-attr",
+              "impact": "serious",
+              "message": "ARIA attribute is allowed",
+              "relatedNodes": []
+            }
+          ],
+          "target": [
+            "iframe",
+            ".ytp-impression-link"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412"
+      ]
+    },
+    {
+      "description": "Ensures role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/aria-allowed-role?application=webdriverjs",
+      "id": "aria-allowed-role",
+      "impact": null,
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": null,
+              "id": "aria-allowed-role",
+              "impact": "minor",
+              "message": "ARIA role is allowed for given element",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<div class=\"ytp-bezel\" role=\"status\"><div class=\"ytp-bezel-icon\"></div></div>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-bezel"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": null,
+              "id": "aria-allowed-role",
+              "impact": "minor",
+              "message": "ARIA role is allowed for given element",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<div class=\"ytp-error\" role=\"alert\" data-layer=\"4\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-error"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": null,
+              "id": "aria-allowed-role",
+              "impact": "minor",
+              "message": "ARIA role is allowed for given element",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<div class=\"ytp-multicam-menu\" role=\"dialog\" data-layer=\"5\" style=\"display: none;\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-multicam-menu"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": null,
+              "id": "aria-allowed-role",
+              "impact": "minor",
+              "message": "ARIA role is allowed for given element",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<div class=\"ytp-playlist-menu\" role=\"dialog\" id=\"ytp-id-22\" data-layer=\"5\" style=\"display: none;\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#ytp-id-22"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": null,
+              "id": "aria-allowed-role",
+              "impact": "minor",
+              "message": "ARIA role is allowed for given element",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<div class=\"ytp-playlist-menu-items\" role=\"menu\"></div>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-playlist-menu-items"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": null,
+              "id": "aria-allowed-role",
+              "impact": "minor",
+              "message": "ARIA role is allowed for given element",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<div class=\"ytp-share-panel\" id=\"ytp-id-26\" role=\"dialog\" aria-labelledby=\"ytp-id-25\" data-layer=\"5\" style=\"display: none;\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#ytp-id-26"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": null,
+              "id": "aria-allowed-role",
+              "impact": "minor",
+              "message": "ARIA role is allowed for given element",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<div class=\"ytp-overflow-panel\" id=\"ytp-id-29\" role=\"dialog\" data-layer=\"5\" style=\"display: none;\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#ytp-id-29"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": null,
+              "id": "aria-allowed-role",
+              "impact": "minor",
+              "message": "ARIA role is allowed for given element",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<div class=\"ytp-panel-menu\" role=\"menu\"></div>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-panel-menu"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": null,
+              "id": "aria-allowed-role",
+              "impact": "minor",
+              "message": "ARIA role is allowed for given element",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<div class=\"ytp-progress-bar\" tabindex=\"0\" role=\"slider\" aria-label=\"Seek slider\" draggable=\"true\" aria-valuemin=\"0\" aria-valuemax=\"0\" aria-valuenow=\"0\" aria-valuetext=\"0 Minutes 0 Seconds of 0 Minutes 0 Seconds\" style=\"touch-action: none;\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-progress-bar"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": null,
+              "id": "aria-allowed-role",
+              "impact": "minor",
+              "message": "ARIA role is allowed for given element",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<a class=\"ytp-prev-button ytp-button\" role=\"button\" aria-disabled=\"true\" style=\"display: none;\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-prev-button"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": null,
+              "id": "aria-allowed-role",
+              "impact": "minor",
+              "message": "ARIA role is allowed for given element",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<a class=\"ytp-next-button ytp-button\" role=\"button\" aria-disabled=\"true\" style=\"display: none;\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-next-button"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": null,
+              "id": "aria-allowed-role",
+              "impact": "minor",
+              "message": "ARIA role is allowed for given element",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<div class=\"ytp-volume-panel\" role=\"slider\" aria-valuemin=\"0\" aria-valuemax=\"100\" tabindex=\"0\" aria-valuenow=\"100\" aria-valuetext=\"100% volume\"><div class=\"ytp-volume-slider\" draggable=\"true\" style=\"touch-action: none;\"><div class=\"ytp-volume-slider-handle\" style=\"left: 40px;\"></div></div></div>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-volume-panel"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ]
+    },
+    {
+      "description": "Ensures aria-hidden='true' is not present on the document body.",
+      "help": "aria-hidden='true' must not be present on the document body",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/aria-hidden-body?application=webdriverjs",
+      "id": "aria-hidden-body",
+      "impact": null,
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": null,
+              "id": "aria-hidden-body",
+              "impact": "critical",
+              "message": "No aria-hidden attribute is present on document body",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<body>\n  <h1>Flashing content doesn't have warning</h1>\n  <main>\n    <iframe allowfullscreen=\"\" frameborder=\"0\" height=\"315\" src=\"https://www.youtube.com/embed/gwoQRKCEHgY\" title=\"Banned Pokemon scene\" width=\"560\" cd_frame_id_=\"09d552de3d7d2fd8f70b8342d268afc6\"></iframe>\n  </main>\n\n\n</body>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "body"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412"
+      ]
+    },
+    {
+      "description": "Ensures aria-hidden elements do not contain focusable elements",
+      "help": "ARIA hidden element must not contain focusable elements",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/aria-hidden-focus?application=webdriverjs",
+      "id": "aria-hidden-focus",
+      "impact": null,
+      "nodes": [
+        {
+          "all": [
+            {
+              "data": null,
+              "id": "focusable-modal-open",
+              "impact": "serious",
+              "message": "No focusable elements while a modal is open",
+              "relatedNodes": []
+            },
+            {
+              "data": null,
+              "id": "focusable-disabled",
+              "impact": "serious",
+              "message": "No focusable elements contained within element",
+              "relatedNodes": []
+            },
+            {
+              "data": null,
+              "id": "focusable-not-tabbable",
+              "impact": "serious",
+              "message": "No focusable elements contained within element",
+              "relatedNodes": []
+            }
+          ],
+          "any": [],
+          "html": "<div class=\"ytp-title-expanded-overlay\" aria-hidden=\"true\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-title-expanded-overlay"
+          ]
+        },
+        {
+          "all": [
+            {
+              "data": null,
+              "id": "focusable-modal-open",
+              "impact": "serious",
+              "message": "No focusable elements while a modal is open",
+              "relatedNodes": []
+            },
+            {
+              "data": null,
+              "id": "focusable-disabled",
+              "impact": "serious",
+              "message": "No focusable elements contained within element",
+              "relatedNodes": []
+            },
+            {
+              "data": null,
+              "id": "focusable-not-tabbable",
+              "impact": "serious",
+              "message": "No focusable elements contained within element",
+              "relatedNodes": []
+            }
+          ],
+          "any": [],
+          "html": "<div class=\"ytp-copylink-title\" aria-hidden=\"true\">Copy link</div>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-copylink-title"
+          ]
+        },
+        {
+          "all": [
+            {
+              "data": null,
+              "id": "focusable-modal-open",
+              "impact": "serious",
+              "message": "No focusable elements while a modal is open",
+              "relatedNodes": []
+            },
+            {
+              "data": null,
+              "id": "focusable-disabled",
+              "impact": "serious",
+              "message": "No focusable elements contained within element",
+              "relatedNodes": []
+            },
+            {
+              "data": null,
+              "id": "focusable-not-tabbable",
+              "impact": "serious",
+              "message": "No focusable elements contained within element",
+              "relatedNodes": []
+            }
+          ],
+          "any": [],
+          "html": "<div class=\"ytp-impression-link-content\" aria-hidden=\"true\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-impression-link-content"
+          ]
+        },
+        {
+          "all": [
+            {
+              "data": null,
+              "id": "focusable-modal-open",
+              "impact": "serious",
+              "message": "No focusable elements while a modal is open",
+              "relatedNodes": []
+            },
+            {
+              "data": null,
+              "id": "focusable-disabled",
+              "impact": "serious",
+              "message": "No focusable elements contained within element",
+              "relatedNodes": []
+            },
+            {
+              "data": null,
+              "id": "focusable-not-tabbable",
+              "impact": "serious",
+              "message": "No focusable elements contained within element",
+              "relatedNodes": []
+            }
+          ],
+          "any": [],
+          "html": "<span class=\"ytp-chapter-title-prefix\" aria-hidden=\"true\">•</span>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-chapter-title-prefix"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "wcag131"
+      ]
+    },
+    {
+      "description": "Ensures elements with ARIA roles have all required ARIA attributes",
+      "help": "Required ARIA attributes must be provided",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/aria-required-attr?application=webdriverjs",
+      "id": "aria-required-attr",
+      "impact": null,
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": null,
+              "id": "aria-required-attr",
+              "impact": "critical",
+              "message": "All required ARIA attributes are present",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<div class=\"ytp-error\" role=\"alert\" data-layer=\"4\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-error"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412"
+      ]
+    },
+    {
+      "description": "Ensures all elements with a role attribute use a valid value",
+      "help": "ARIA roles used must conform to valid values",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/aria-roles?application=webdriverjs",
+      "id": "aria-roles",
+      "impact": null,
+      "nodes": [
+        {
+          "all": [],
+          "any": [],
+          "html": "<div class=\"ytp-error\" role=\"alert\" data-layer=\"4\">",
+          "impact": null,
+          "none": [
+            {
+              "data": null,
+              "id": "fallbackrole",
+              "impact": "serious",
+              "message": "Only one role value used",
+              "relatedNodes": []
+            },
+            {
+              "data": null,
+              "id": "invalidrole",
+              "impact": "critical",
+              "message": "ARIA role is valid",
+              "relatedNodes": []
+            },
+            {
+              "data": null,
+              "id": "abstractrole",
+              "impact": "serious",
+              "message": "Abstract roles are not used",
+              "relatedNodes": []
+            },
+            {
+              "data": null,
+              "id": "unsupportedrole",
+              "impact": "critical",
+              "message": "ARIA role is supported",
+              "relatedNodes": []
+            }
+          ],
+          "target": [
+            "iframe",
+            ".ytp-error"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412"
+      ]
+    },
+    {
+      "description": "Ensures all ARIA attributes have valid values",
+      "help": "ARIA attributes must conform to valid values",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/aria-valid-attr-value?application=webdriverjs",
+      "id": "aria-valid-attr-value",
+      "impact": null,
+      "nodes": [
+        {
+          "all": [
+            {
+              "data": null,
+              "id": "aria-valid-attr-value",
+              "impact": "critical",
+              "message": "ARIA attribute values are valid",
+              "relatedNodes": []
+            },
+            {
+              "data": null,
+              "id": "aria-errormessage",
+              "impact": "critical",
+              "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique",
+              "relatedNodes": []
+            },
+            {
+              "data": null,
+              "id": "aria-level",
+              "impact": "serious",
+              "message": "aria-level values are valid",
+              "relatedNodes": []
+            }
+          ],
+          "any": [],
+          "html": "<div class=\"html5-video-player ytp-exp-bottom-control-flexbox ytp-embed ytp-embed-playlist ytp-menu-shown ytp-hide-info-bar ytp-embed-error\" tabindex=\"-1\" id=\"movie_player\" data-version=\"/s/player/9da24d97/player_ias.vflset/en_US/base.js\" aria-label=\"YouTube Video Player\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#movie_player"
+          ]
+        },
+        {
+          "all": [
+            {
+              "data": null,
+              "id": "aria-valid-attr-value",
+              "impact": "critical",
+              "message": "ARIA attribute values are valid",
+              "relatedNodes": []
+            },
+            {
+              "data": null,
+              "id": "aria-errormessage",
+              "impact": "critical",
+              "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique",
+              "relatedNodes": []
+            },
+            {
+              "data": null,
+              "id": "aria-level",
+              "impact": "serious",
+              "message": "aria-level values are valid",
+              "relatedNodes": []
+            }
+          ],
+          "any": [],
+          "html": "<div class=\"ytp-paid-content-overlay\" aria-live=\"assertive\" aria-atomic=\"true\" data-layer=\"4\"><div class=\"ytp-button ytp-paid-content-overlay-text\" style=\"display: none;\"></div></div>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-paid-content-overlay"
+          ]
+        },
+        {
+          "all": [
+            {
+              "data": null,
+              "id": "aria-valid-attr-value",
+              "impact": "critical",
+              "message": "ARIA attribute values are valid",
+              "relatedNodes": []
+            },
+            {
+              "data": null,
+              "id": "aria-errormessage",
+              "impact": "critical",
+              "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique",
+              "relatedNodes": []
+            },
+            {
+              "data": null,
+              "id": "aria-level",
+              "impact": "serious",
+              "message": "aria-level values are valid",
+              "relatedNodes": []
+            }
+          ],
+          "any": [],
+          "html": "<a class=\"ytp-small-redirect\" href=\"https://www.youtube.com\" target=\"_blank\" aria-label=\"Visit YouTube to search for more videos\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-small-redirect"
+          ]
+        },
+        {
+          "all": [
+            {
+              "data": null,
+              "id": "aria-valid-attr-value",
+              "impact": "critical",
+              "message": "ARIA attribute values are valid",
+              "relatedNodes": []
+            },
+            {
+              "data": null,
+              "id": "aria-errormessage",
+              "impact": "critical",
+              "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique",
+              "relatedNodes": []
+            },
+            {
+              "data": null,
+              "id": "aria-level",
+              "impact": "serious",
+              "message": "aria-level values are valid",
+              "relatedNodes": []
+            }
+          ],
+          "any": [],
+          "html": "<a class=\"ytp-impression-link\" aria-label=\"Watch on YouTube\" target=\"_blank\" href=\"https://www.youtube.com/watch?v=gwoQRKCEHgY&amp;feature=emb_imp_woyt\" data-layer=\"7\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-impression-link"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412"
+      ]
+    },
+    {
+      "description": "Ensures attributes that begin with aria- are valid ARIA attributes",
+      "help": "ARIA attributes must conform to valid names",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/aria-valid-attr?application=webdriverjs",
+      "id": "aria-valid-attr",
+      "impact": null,
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": null,
+              "id": "aria-valid-attr",
+              "impact": "critical",
+              "message": "ARIA attribute name is valid",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<div class=\"html5-video-player ytp-exp-bottom-control-flexbox ytp-embed ytp-embed-playlist ytp-menu-shown ytp-hide-info-bar ytp-embed-error\" tabindex=\"-1\" id=\"movie_player\" data-version=\"/s/player/9da24d97/player_ias.vflset/en_US/base.js\" aria-label=\"YouTube Video Player\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#movie_player"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": null,
+              "id": "aria-valid-attr",
+              "impact": "critical",
+              "message": "ARIA attribute name is valid",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<div class=\"ytp-paid-content-overlay\" aria-live=\"assertive\" aria-atomic=\"true\" data-layer=\"4\"><div class=\"ytp-button ytp-paid-content-overlay-text\" style=\"display: none;\"></div></div>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-paid-content-overlay"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": null,
+              "id": "aria-valid-attr",
+              "impact": "critical",
+              "message": "ARIA attribute name is valid",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<a class=\"ytp-small-redirect\" href=\"https://www.youtube.com\" target=\"_blank\" aria-label=\"Visit YouTube to search for more videos\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-small-redirect"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": null,
+              "id": "aria-valid-attr",
+              "impact": "critical",
+              "message": "ARIA attribute name is valid",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<a class=\"ytp-impression-link\" aria-label=\"Watch on YouTube\" target=\"_blank\" href=\"https://www.youtube.com/watch?v=gwoQRKCEHgY&amp;feature=emb_imp_woyt\" data-layer=\"7\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-impression-link"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412"
+      ]
+    },
+    {
+      "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+      "help": "Inline text spacing must be adjustable with custom stylesheets",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/avoid-inline-spacing?application=webdriverjs",
+      "id": "avoid-inline-spacing",
+      "impact": null,
+      "nodes": [
+        {
+          "all": [
+            {
+              "data": null,
+              "id": "avoid-inline-spacing",
+              "impact": "serious",
+              "message": "No inline styles with '!important' that affect text spacing has been specified",
+              "relatedNodes": []
+            }
+          ],
+          "any": [],
+          "html": "<div id=\"player\" style=\"width: 100%; height: 100%;\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#player"
+          ]
+        },
+        {
+          "all": [
+            {
+              "data": null,
+              "id": "avoid-inline-spacing",
+              "impact": "serious",
+              "message": "No inline styles with '!important' that affect text spacing has been specified",
+              "relatedNodes": []
+            }
+          ],
+          "any": [],
+          "html": "<div class=\"ytp-error-content\" style=\"padding-top: 125.5px;\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-error-content"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.structure",
+        "wcag21aa",
+        "wcag1412"
+      ]
+    },
+    {
+      "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+      "help": "Elements must have sufficient color contrast",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/color-contrast?application=webdriverjs",
+      "id": "color-contrast",
+      "impact": "serious",
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "bgColor": "#ffffff",
+                "contrastRatio": 21,
+                "expectedContrastRatio": "3:1",
+                "fgColor": "#000000",
+                "fontSize": "24.0pt (32px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "shadowColor": null
+              },
+              "id": "color-contrast",
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 21",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<h1>Flashing content doesn't have warning</h1>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "h1"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "bgColor": "#282828",
+                "contrastRatio": 12.7,
+                "expectedContrastRatio": "4.5:1",
+                "fgColor": "#eeeeee",
+                "fontSize": "16.5pt (22px)",
+                "fontWeight": "normal",
+                "messageKey": null
+              },
+              "id": "color-contrast",
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 12.7",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<span>This video is unavailable.</span>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-error-content-wrap-reason > span"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143"
+      ]
+    },
+    {
+      "description": "Ensures each HTML document contains a non-empty <title> element",
+      "help": "Documents must have <title> element to aid in navigation",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/document-title?application=webdriverjs",
+      "id": "document-title",
+      "impact": null,
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": null,
+              "id": "doc-has-title",
+              "impact": "serious",
+              "message": "Document has a non-empty <title> element",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<html lang=\"en\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "html"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag242",
+        "ACT"
+      ]
+    },
+    {
+      "description": "Ensures every id attribute value of active elements is unique",
+      "help": "IDs of active elements must be unique",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/duplicate-id-active?application=webdriverjs",
+      "id": "duplicate-id-active",
+      "impact": null,
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": "movie_player",
+              "id": "duplicate-id-active",
+              "impact": "serious",
+              "message": "Document has no active elements that share the same id attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<div class=\"html5-video-player ytp-exp-bottom-control-flexbox ytp-embed ytp-embed-playlist ytp-menu-shown ytp-hide-info-bar ytp-embed-error\" tabindex=\"-1\" id=\"movie_player\" data-version=\"/s/player/9da24d97/player_ias.vflset/en_US/base.js\" aria-label=\"YouTube Video Player\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#movie_player"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.parsing",
+        "wcag2a",
+        "wcag411"
+      ]
+    },
+    {
+      "description": "Ensures every id attribute value used in ARIA and in labels is unique",
+      "help": "IDs used in ARIA and labels must be unique",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/duplicate-id-aria?application=webdriverjs",
+      "id": "duplicate-id-aria",
+      "impact": null,
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": "ytp-id-22",
+              "id": "duplicate-id-aria",
+              "impact": "critical",
+              "message": "Document has no elements referenced with ARIA or labels that share the same id attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<div class=\"ytp-playlist-menu\" role=\"dialog\" id=\"ytp-id-22\" data-layer=\"5\" style=\"display: none;\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#ytp-id-22"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": "ytp-id-26",
+              "id": "duplicate-id-aria",
+              "impact": "critical",
+              "message": "Document has no elements referenced with ARIA or labels that share the same id attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<div class=\"ytp-share-panel\" id=\"ytp-id-26\" role=\"dialog\" aria-labelledby=\"ytp-id-25\" data-layer=\"5\" style=\"display: none;\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#ytp-id-26"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": "ytp-id-25",
+              "id": "duplicate-id-aria",
+              "impact": "critical",
+              "message": "Document has no elements referenced with ARIA or labels that share the same id attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<div class=\"ytp-share-panel-title\" id=\"ytp-id-25\">Share</div>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#ytp-id-25"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": "ytp-id-29",
+              "id": "duplicate-id-aria",
+              "impact": "critical",
+              "message": "Document has no elements referenced with ARIA or labels that share the same id attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<div class=\"ytp-overflow-panel\" id=\"ytp-id-29\" role=\"dialog\" data-layer=\"5\" style=\"display: none;\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#ytp-id-29"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": "ytp-id-17",
+              "id": "duplicate-id-aria",
+              "impact": "critical",
+              "message": "Document has no elements referenced with ARIA or labels that share the same id attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<div class=\"ytp-popup ytp-settings-menu\" data-layer=\"6\" id=\"ytp-id-17\" style=\"display: none;\"><div class=\"ytp-panel\"><div class=\"ytp-panel-menu\" role=\"menu\"></div></div></div>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#ytp-id-17"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.parsing",
+        "wcag2a",
+        "wcag411"
+      ]
+    },
+    {
+      "description": "Ensures every id attribute value is unique",
+      "help": "id attribute value must be unique",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/duplicate-id?application=webdriverjs",
+      "id": "duplicate-id",
+      "impact": null,
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": "js-1124342058",
+              "id": "duplicate-id",
+              "impact": "minor",
+              "message": "Document has no static elements that share the same id attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<script id=\"js-1124342058\" src=\"//static.doubleclick.net/instream/ad_status.js\" nonce=\"33Ca6JD1SWaXtWdaBBqjnw\"></script>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#js-1124342058"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": "player",
+              "id": "duplicate-id",
+              "impact": "minor",
+              "message": "Document has no static elements that share the same id attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<div id=\"player\" style=\"width: 100%; height: 100%;\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#player"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": "ytp-id-24",
+              "id": "duplicate-id",
+              "impact": "minor",
+              "message": "Document has no static elements that share the same id attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<path class=\"ytp-svg-fill\" d=\"M18,8 C12.47,8 8,12.47 8,18 C8,23.52 12.47,28 18,28 C23.52,28 28,23.52 28,18 C28,12.47 23.52,8 18,8 L18,8 Z M16,19.02 L16,12.00 L18,12.00 L18,17.86 L23.10,20.81 L22.10,22.54 L16,19.02 Z\" id=\"ytp-id-24\"></path>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#ytp-id-24"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": "ytp-id-27",
+              "id": "duplicate-id",
+              "impact": "minor",
+              "message": "Document has no static elements that share the same id attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<path class=\"ytp-svg-fill\" d=\"m 20.20,14.19 0,-4.45 7.79,7.79 -7.79,7.79 0,-4.56 C 16.27,20.69 12.10,21.81 9.34,24.76 8.80,25.13 7.60,27.29 8.12,25.65 9.08,21.32 11.80,17.18 15.98,15.38 c 1.33,-0.60 2.76,-0.98 4.21,-1.19 z\" id=\"ytp-id-27\"></path>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#ytp-id-27"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": "ytp-id-28",
+              "id": "duplicate-id",
+              "impact": "minor",
+              "message": "Document has no static elements that share the same id attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<path class=\"ytp-svg-fill\" d=\"M21.9,8.3H11.3c-0.9,0-1.7,.8-1.7,1.7v12.3h1.7V10h10.6V8.3z M24.6,11.8h-9.7c-1,0-1.8,.8-1.8,1.8v12.3  c0,1,.8,1.8,1.8,1.8h9.7c1,0,1.8-0.8,1.8-1.8V13.5C26.3,12.6,25.5,11.8,24.6,11.8z M24.6,25.9h-9.7V13.5h9.7V25.9z\" id=\"ytp-id-28\"></path>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#ytp-id-28"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": "ytp-id-23",
+              "id": "duplicate-id",
+              "impact": "minor",
+              "message": "Document has no static elements that share the same id attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<path d=\"m 22.53,21.42 0,6.85 5.66,-3.42 -5.66,-3.42 0,0 z m -11.33,0 9.06,0 0,2.28 -9.06,0 0,-2.28 0,0 z m 0,-9.14 13.6,0 0,2.28 -13.6,0 0,-2.28 0,0 z m 0,4.57 13.6,0 0,2.28 -13.6,0 0,-2.28 0,0 z\" fill=\"#fff\" id=\"ytp-id-23\"></path>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#ytp-id-23"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": "ytp-id-2",
+              "id": "duplicate-id",
+              "impact": "minor",
+              "message": "Document has no static elements that share the same id attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<path class=\"ytp-svg-fill\" d=\"M18,8 C12.47,8 8,12.47 8,18 C8,23.52 12.47,28 18,28 C23.52,28 28,23.52 28,18 C28,12.47 23.52,8 18,8 L18,8 Z M17,16 L19,16 L19,24 L17,24 L17,16 Z M17,12 L19,12 L19,14 L17,14 L17,12 Z\" id=\"ytp-id-2\"></path>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#ytp-id-2"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": "ytp-id-1",
+              "id": "duplicate-id",
+              "impact": "minor",
+              "message": "Document has no static elements that share the same id attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<path class=\"ytp-svg-fill\" d=\"m 21.48,17.98 c 0,-1.77 -1.02,-3.29 -2.5,-4.03 v 2.21 l 2.45,2.45 c .03,-0.2 .05,-0.41 .05,-0.63 z m 2.5,0 c 0,.94 -0.2,1.82 -0.54,2.64 l 1.51,1.51 c .66,-1.24 1.03,-2.65 1.03,-4.15 0,-4.28 -2.99,-7.86 -7,-8.76 v 2.05 c 2.89,.86 5,3.54 5,6.71 z M 9.25,8.98 l -1.27,1.26 4.72,4.73 H 7.98 v 6 H 11.98 l 5,5 v -6.73 l 4.25,4.25 c -0.67,.52 -1.42,.93 -2.25,1.18 v 2.06 c 1.38,-0.31 2.63,-0.95 3.69,-1.81 l 2.04,2.05 1.27,-1.27 -9,-9 -7.72,-7.72 z m 7.72,.99 -2.09,2.08 2.09,2.09 V 9.98 z\" id=\"ytp-id-1\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#ytp-id-1"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": "ytp-id-30",
+              "id": "duplicate-id",
+              "impact": "minor",
+              "message": "Document has no static elements that share the same id attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<path class=\"ytp-svg-fill\" d=\"M 16.68,.99 C 13.55,1.03 7.02,1.16 4.99,1.68 c -1.49,.4 -2.59,1.6 -2.99,3 -0.69,2.7 -0.68,8.31 -0.68,8.31 0,0 -0.01,5.61 .68,8.31 .39,1.5 1.59,2.6 2.99,3 2.69,.7 13.40,.68 13.40,.68 0,0 10.70,.01 13.40,-0.68 1.5,-0.4 2.59,-1.6 2.99,-3 .69,-2.7 .68,-8.31 .68,-8.31 0,0 .11,-5.61 -0.68,-8.31 -0.4,-1.5 -1.59,-2.6 -2.99,-3 C 29.11,.98 18.40,.99 18.40,.99 c 0,0 -0.67,-0.01 -1.71,0 z m 72.21,.90 0,21.28 2.78,0 .31,-1.37 .09,0 c .3,.5 .71,.88 1.21,1.18 .5,.3 1.08,.40 1.68,.40 1.1,0 1.99,-0.49 2.49,-1.59 .5,-1.1 .81,-2.70 .81,-4.90 l 0,-2.40 c 0,-1.6 -0.11,-2.90 -0.31,-3.90 -0.2,-0.89 -0.5,-1.59 -1,-2.09 -0.5,-0.4 -1.10,-0.59 -1.90,-0.59 -0.59,0 -1.18,.19 -1.68,.49 -0.49,.3 -1.01,.80 -1.21,1.40 l 0,-7.90 -3.28,0 z m -49.99,.78 3.90,13.90 .18,6.71 3.31,0 0,-6.71 3.87,-13.90 -3.37,0 -1.40,6.31 c -0.4,1.89 -0.71,3.19 -0.81,3.99 l -0.09,0 c -0.2,-1.1 -0.51,-2.4 -0.81,-3.99 l -1.37,-6.31 -3.40,0 z m 29.59,0 0,2.71 3.40,0 0,17.90 3.28,0 0,-17.90 3.40,0 c 0,0 .00,-2.71 -0.09,-2.71 l -9.99,0 z m -53.49,5.12 8.90,5.18 -8.90,5.09 0,-10.28 z m 89.40,.09 c -1.7,0 -2.89,.59 -3.59,1.59 -0.69,.99 -0.99,2.60 -0.99,4.90 l 0,2.59 c 0,2.2 .30,3.90 .99,4.90 .7,1.1 1.8,1.59 3.5,1.59 1.4,0 2.38,-0.3 3.18,-1 .7,-0.7 1.09,-1.69 1.09,-3.09 l 0,-0.5 -2.90,-0.21 c 0,1 -0.08,1.6 -0.28,2 -0.1,.4 -0.5,.62 -1,.62 -0.3,0 -0.61,-0.11 -0.81,-0.31 -0.2,-0.3 -0.30,-0.59 -0.40,-1.09 -0.1,-0.5 -0.09,-1.21 -0.09,-2.21 l 0,-0.78 5.71,-0.09 0,-2.62 c 0,-1.6 -0.10,-2.78 -0.40,-3.68 -0.2,-0.89 -0.71,-1.59 -1.31,-1.99 -0.7,-0.4 -1.48,-0.59 -2.68,-0.59 z m -50.49,.09 c -1.09,0 -2.01,.18 -2.71,.68 -0.7,.4 -1.2,1.12 -1.49,2.12 -0.3,1 -0.5,2.27 -0.5,3.87 l 0,2.21 c 0,1.5 .10,2.78 .40,3.78 .2,.9 .70,1.62 1.40,2.12 .69,.5 1.71,.68 2.81,.78 1.19,0 2.08,-0.28 2.78,-0.68 .69,-0.4 1.09,-1.09 1.49,-2.09 .39,-1 .49,-2.30 .49,-3.90 l 0,-2.21 c 0,-1.6 -0.2,-2.87 -0.49,-3.87 -0.3,-0.89 -0.8,-1.62 -1.49,-2.12 -0.7,-0.5 -1.58,-0.68 -2.68,-0.68 z m 12.18,.09 0,11.90 c -0.1,.3 -0.29,.48 -0.59,.68 -0.2,.2 -0.51,.31 -0.81,.31 -0.3,0 -0.58,-0.10 -0.68,-0.40 -0.1,-0.3 -0.18,-0.70 -0.18,-1.40 l 0,-10.99 -3.40,0 0,11.21 c 0,1.4 .18,2.39 .68,3.09 .49,.7 1.21,1 2.21,1 1.4,0 2.48,-0.69 3.18,-2.09 l .09,0 .31,1.78 2.59,0 0,-14.99 c 0,0 -3.40,.00 -3.40,-0.09 z m 17.31,0 0,11.90 c -0.1,.3 -0.29,.48 -0.59,.68 -0.2,.2 -0.51,.31 -0.81,.31 -0.3,0 -0.58,-0.10 -0.68,-0.40 -0.1,-0.3 -0.21,-0.70 -0.21,-1.40 l 0,-10.99 -3.40,0 0,11.21 c 0,1.4 .21,2.39 .71,3.09 .5,.7 1.18,1 2.18,1 1.39,0 2.51,-0.69 3.21,-2.09 l .09,0 .28,1.78 2.62,0 0,-14.99 c 0,0 -3.40,.00 -3.40,-0.09 z m 20.90,2.09 c .4,0 .58,.11 .78,.31 .2,.3 .30,.59 .40,1.09 .1,.5 .09,1.21 .09,2.21 l 0,1.09 -2.5,0 0,-1.09 c 0,-1 -0.00,-1.71 .09,-2.21 0,-0.4 .11,-0.8 .31,-1 .2,-0.3 .51,-0.40 .81,-0.40 z m -50.49,.12 c .5,0 .8,.18 1,.68 .19,.5 .28,1.30 .28,2.40 l 0,4.68 c 0,1.1 -0.08,1.90 -0.28,2.40 -0.2,.5 -0.5,.68 -1,.68 -0.5,0 -0.79,-0.18 -0.99,-0.68 -0.2,-0.5 -0.31,-1.30 -0.31,-2.40 l 0,-4.68 c 0,-1.1 .11,-1.90 .31,-2.40 .2,-0.5 .49,-0.68 .99,-0.68 z m 39.68,.09 c .3,0 .61,.10 .81,.40 .2,.3 .27,.67 .37,1.37 .1,.6 .12,1.51 .12,2.71 l .09,1.90 c 0,1.1 .00,1.99 -0.09,2.59 -0.1,.6 -0.19,1.08 -0.49,1.28 -0.2,.3 -0.50,.40 -0.90,.40 -0.3,0 -0.51,-0.08 -0.81,-0.18 -0.2,-0.1 -0.39,-0.29 -0.59,-0.59 l 0,-8.5 c .1,-0.4 .29,-0.7 .59,-1 .3,-0.3 .60,-0.40 .90,-0.40 z\" id=\"ytp-id-30\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#ytp-id-30"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": "ytp-id-3",
+              "id": "duplicate-id",
+              "impact": "minor",
+              "message": "Document has no static elements that share the same id attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<path d=\"M12,14 L9,11 L9,3 L12,0 L5,0 L5,14 L12,14 Z\" fill=\"#eaeaea\" id=\"ytp-id-3\"></path>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#ytp-id-3"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": "ytp-id-4",
+              "id": "duplicate-id",
+              "impact": "minor",
+              "message": "Document has no static elements that share the same id attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<path d=\"M2,14 L5,11 L5,3 L2,0 L9,0 L9,14 L2,14 L2,14 Z\" fill=\"#eaeaea\" id=\"ytp-id-4\"></path>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#ytp-id-4"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": "ytp-id-10",
+              "id": "duplicate-id",
+              "impact": "minor",
+              "message": "Document has no static elements that share the same id attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<path class=\"ytp-svg-fill\" d=\"m 12,12 h 2 v 12 h -2 z m 3.5,6 8.5,6 V 12 z\" id=\"ytp-id-10\"></path>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#ytp-id-10"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": "ytp-id-11",
+              "id": "duplicate-id",
+              "impact": "minor",
+              "message": "Document has no static elements that share the same id attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<path class=\"ytp-svg-fill\" d=\"M 12,26 18.5,22 18.5,14 12,10 z M 18.5,22 25,18 25,18 18.5,14 z\" id=\"ytp-id-11\"></path>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#ytp-id-11"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": "ytp-id-12",
+              "id": "duplicate-id",
+              "impact": "minor",
+              "message": "Document has no static elements that share the same id attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<path class=\"ytp-svg-fill\" d=\"M 12,24 20.5,18 12,12 V 24 z M 22,12 v 12 h 2 V 12 h -2 z\" id=\"ytp-id-12\"></path>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#ytp-id-12"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": "ytp-svg-volume-animation-mask",
+              "id": "duplicate-id",
+              "impact": "minor",
+              "message": "Document has no static elements that share the same id attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<clipPath id=\"ytp-svg-volume-animation-mask\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#ytp-svg-volume-animation-mask"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": "ytp-svg-volume-animation-slash-mask",
+              "id": "duplicate-id",
+              "impact": "minor",
+              "message": "Document has no static elements that share the same id attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<clipPath id=\"ytp-svg-volume-animation-slash-mask\"><path class=\"ytp-svg-volume-animation-mover\" d=\"m -11.45,-15.55 -4.44,4.51 20.45,20.94 4.55,-4.66 z\" transform=\"translate(0, 0)\"></path></clipPath>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#ytp-svg-volume-animation-slash-mask"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": "ytp-id-14",
+              "id": "duplicate-id",
+              "impact": "minor",
+              "message": "Document has no static elements that share the same id attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<path class=\"ytp-svg-fill ytp-svg-volume-animation-speaker\" clip-path=\"url(#ytp-svg-volume-animation-mask)\" d=\"M8,21 L12,21 L17,26 L17,10 L12,15 L8,15 L8,21 Z M19,14 L19,22 C20.48,21.32 21.5,19.77 21.5,18 C21.5,16.26 20.48,14.74 19,14 ZM19,11.29 C21.89,12.15 24,14.83 24,18 C24,21.17 21.89,23.85 19,24.71 L19,26.77 C23.01,25.86 26,22.28 26,18 C26,13.72 23.01,10.14 19,9.23 L19,11.29 Z\" fill=\"#fff\" id=\"ytp-id-14\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#ytp-id-14"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": "ytp-id-15",
+              "id": "duplicate-id",
+              "impact": "minor",
+              "message": "Document has no static elements that share the same id attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<path class=\"ytp-svg-fill ytp-svg-volume-animation-hider\" clip-path=\"url(#ytp-svg-volume-animation-slash-mask)\" d=\"M 9.25,9 7.98,10.27 24.71,27 l 1.27,-1.27 Z\" fill=\"#fff\" id=\"ytp-id-15\" style=\"display: none;\"></path>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#ytp-id-15"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": "ytp-id-16",
+              "id": "duplicate-id",
+              "impact": "minor",
+              "message": "Document has no static elements that share the same id attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<path d=\"M11,11 C9.89,11 9,11.9 9,13 L9,23 C9,24.1 9.89,25 11,25 L25,25 C26.1,25 27,24.1 27,23 L27,13 C27,11.9 26.1,11 25,11 L11,11 Z M17,17 L15.5,17 L15.5,16.5 L13.5,16.5 L13.5,19.5 L15.5,19.5 L15.5,19 L17,19 L17,20 C17,20.55 16.55,21 16,21 L13,21 C12.45,21 12,20.55 12,20 L12,16 C12,15.45 12.45,15 13,15 L16,15 C16.55,15 17,15.45 17,16 L17,17 L17,17 Z M24,17 L22.5,17 L22.5,16.5 L20.5,16.5 L20.5,19.5 L22.5,19.5 L22.5,19 L24,19 L24,20 C24,20.55 23.55,21 23,21 L20,21 C19.45,21 19,20.55 19,20 L19,16 C19,15.45 19.45,15 20,15 L23,15 C23.55,15 24,15.45 24,16 L24,17 L24,17 Z\" fill=\"#fff\" id=\"ytp-id-16\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#ytp-id-16"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": "ytp-id-18",
+              "id": "duplicate-id",
+              "impact": "minor",
+              "message": "Document has no static elements that share the same id attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<path d=\"m 23.94,18.78 c .03,-0.25 .05,-0.51 .05,-0.78 0,-0.27 -0.02,-0.52 -0.05,-0.78 l 1.68,-1.32 c .15,-0.12 .19,-0.33 .09,-0.51 l -1.6,-2.76 c -0.09,-0.17 -0.31,-0.24 -0.48,-0.17 l -1.99,.8 c -0.41,-0.32 -0.86,-0.58 -1.35,-0.78 l -0.30,-2.12 c -0.02,-0.19 -0.19,-0.33 -0.39,-0.33 l -3.2,0 c -0.2,0 -0.36,.14 -0.39,.33 l -0.30,2.12 c -0.48,.2 -0.93,.47 -1.35,.78 l -1.99,-0.8 c -0.18,-0.07 -0.39,0 -0.48,.17 l -1.6,2.76 c -0.10,.17 -0.05,.39 .09,.51 l 1.68,1.32 c -0.03,.25 -0.05,.52 -0.05,.78 0,.26 .02,.52 .05,.78 l -1.68,1.32 c -0.15,.12 -0.19,.33 -0.09,.51 l 1.6,2.76 c .09,.17 .31,.24 .48,.17 l 1.99,-0.8 c .41,.32 .86,.58 1.35,.78 l .30,2.12 c .02,.19 .19,.33 .39,.33 l 3.2,0 c .2,0 .36,-0.14 .39,-0.33 l .30,-2.12 c .48,-0.2 .93,-0.47 1.35,-0.78 l 1.99,.8 c .18,.07 .39,0 .48,-0.17 l 1.6,-2.76 c .09,-0.17 .05,-0.39 -0.09,-0.51 l -1.68,-1.32 0,0 z m -5.94,2.01 c -1.54,0 -2.8,-1.25 -2.8,-2.8 0,-1.54 1.25,-2.8 2.8,-2.8 1.54,0 2.8,1.25 2.8,2.8 0,1.54 -1.25,2.8 -2.8,2.8 l 0,0 z\" fill=\"#fff\" id=\"ytp-id-18\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#ytp-id-18"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": "ytp-id-19",
+              "id": "duplicate-id",
+              "impact": "minor",
+              "message": "Document has no static elements that share the same id attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<path d=\"M 26,10 22.83,10 21,8 15,8 13.17,10 10,10 c -1.1,0 -2,.9 -2,2 l 0,12 c 0,1.1 .9,2 2,2 l 16,0 c 1.1,0 2,-0.9 2,-2 l 0,-12 c 0,-1.1 -0.9,-2 -2,-2 l 0,0 z m -5,11.5 0,-2.5 -6,0 0,2.5 -3.5,-3.5 3.5,-3.5 0,2.5 6,0 0,-2.5 3.5,3.5 -3.5,3.5 0,0 z\" fill=\"#fff\" id=\"ytp-id-19\"></path>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#ytp-id-19"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": "ytp-id-20",
+              "id": "duplicate-id",
+              "impact": "minor",
+              "message": "Document has no static elements that share the same id attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<path class=\"ytp-svg-fill\" d=\"M 45.09 10 L 45.09 25.82 L 47.16 25.82 L 47.41 24.76 L 47.47 24.76 C 47.66 25.14 47.94 25.44 48.33 25.66 C 48.72 25.88 49.16 25.99 49.63 25.99 C 50.48 25.99 51.1 25.60 51.5 24.82 C 51.9 24.04 52.09 22.82 52.09 21.16 L 52.09 19.40 C 52.12 18.13 52.05 17.15 51.90 16.44 C 51.75 15.74 51.50 15.23 51.16 14.91 C 50.82 14.59 50.34 14.44 49.75 14.44 C 49.29 14.44 48.87 14.57 48.47 14.83 C 48.27 14.96 48.09 15.11 47.93 15.29 C 47.78 15.46 47.64 15.65 47.53 15.86 L 47.51 15.86 L 47.51 10 L 45.09 10 z M 8.10 10.56 L 10.96 20.86 L 10.96 25.82 L 13.42 25.82 L 13.42 20.86 L 16.32 10.56 L 13.83 10.56 L 12.78 15.25 C 12.49 16.62 12.31 17.59 12.23 18.17 L 12.16 18.17 C 12.04 17.35 11.84 16.38 11.59 15.23 L 10.59 10.56 L 8.10 10.56 z M 30.10 10.56 L 30.10 12.58 L 32.59 12.58 L 32.59 25.82 L 35.06 25.82 L 35.06 12.58 L 37.55 12.58 L 37.55 10.56 L 30.10 10.56 z M 19.21 14.46 C 18.37 14.46 17.69 14.63 17.17 14.96 C 16.65 15.29 16.27 15.82 16.03 16.55 C 15.79 17.28 15.67 18.23 15.67 19.43 L 15.67 21.06 C 15.67 22.24 15.79 23.19 16 23.91 C 16.21 24.62 16.57 25.15 17.07 25.49 C 17.58 25.83 18.27 26 19.15 26 C 20.02 26 20.69 25.83 21.19 25.5 C 21.69 25.17 22.06 24.63 22.28 23.91 C 22.51 23.19 22.63 22.25 22.63 21.06 L 22.63 19.43 C 22.63 18.23 22.50 17.28 22.27 16.56 C 22.04 15.84 21.68 15.31 21.18 14.97 C 20.68 14.63 20.03 14.46 19.21 14.46 z M 56.64 14.47 C 55.39 14.47 54.51 14.84 53.99 15.61 C 53.48 16.38 53.22 17.60 53.22 19.27 L 53.22 21.23 C 53.22 22.85 53.47 24.05 53.97 24.83 C 54.34 25.40 54.92 25.77 55.71 25.91 C 55.97 25.96 56.26 25.99 56.57 25.99 C 57.60 25.99 58.40 25.74 58.96 25.23 C 59.53 24.72 59.81 23.94 59.81 22.91 C 59.81 22.74 59.79 22.61 59.78 22.51 L 57.63 22.39 C 57.62 23.06 57.54 23.54 57.40 23.83 C 57.26 24.12 57.01 24.27 56.63 24.27 C 56.35 24.27 56.13 24.18 56.00 24.02 C 55.87 23.86 55.79 23.61 55.75 23.25 C 55.71 22.89 55.68 22.36 55.68 21.64 L 55.68 21.08 L 59.86 21.08 L 59.86 19.16 C 59.86 17.99 59.77 17.08 59.58 16.41 C 59.39 15.75 59.07 15.25 58.61 14.93 C 58.15 14.62 57.50 14.47 56.64 14.47 z M 23.92 14.67 L 23.92 23.00 C 23.92 24.03 24.11 24.79 24.46 25.27 C 24.82 25.76 25.35 26.00 26.09 26.00 C 27.16 26.00 27.97 25.49 28.5 24.46 L 28.55 24.46 L 28.76 25.82 L 30.73 25.82 L 30.73 14.67 L 28.23 14.67 L 28.23 23.52 C 28.13 23.73 27.97 23.90 27.77 24.03 C 27.57 24.16 27.37 24.24 27.15 24.24 C 26.89 24.24 26.70 24.12 26.59 23.91 C 26.48 23.70 26.43 23.35 26.43 22.85 L 26.43 14.67 L 23.92 14.67 z M 36.80 14.67 L 36.80 23.00 C 36.80 24.03 36.98 24.79 37.33 25.27 C 37.60 25.64 37.97 25.87 38.45 25.96 C 38.61 25.99 38.78 26.00 38.97 26.00 C 40.04 26.00 40.83 25.49 41.36 24.46 L 41.41 24.46 L 41.64 25.82 L 43.59 25.82 L 43.59 14.67 L 41.09 14.67 L 41.09 23.52 C 40.99 23.73 40.85 23.90 40.65 24.03 C 40.45 24.16 40.23 24.24 40.01 24.24 C 39.75 24.24 39.58 24.12 39.47 23.91 C 39.36 23.70 39.31 23.35 39.31 22.85 L 39.31 14.67 L 36.80 14.67 z M 56.61 16.15 C 56.88 16.15 57.08 16.23 57.21 16.38 C 57.33 16.53 57.42 16.79 57.47 17.16 C 57.52 17.53 57.53 18.06 57.53 18.78 L 57.53 19.58 L 55.69 19.58 L 55.69 18.78 C 55.69 18.05 55.71 17.52 55.75 17.16 C 55.79 16.81 55.87 16.55 56.00 16.39 C 56.13 16.23 56.32 16.15 56.61 16.15 z M 19.15 16.19 C 19.50 16.19 19.75 16.38 19.89 16.75 C 20.03 17.12 20.09 17.7 20.09 18.5 L 20.09 21.97 C 20.09 22.79 20.03 23.39 19.89 23.75 C 19.75 24.11 19.51 24.29 19.15 24.30 C 18.80 24.30 18.54 24.11 18.41 23.75 C 18.28 23.39 18.22 22.79 18.22 21.97 L 18.22 18.5 C 18.22 17.7 18.28 17.12 18.42 16.75 C 18.56 16.38 18.81 16.19 19.15 16.19 z M 48.63 16.22 C 48.88 16.22 49.08 16.31 49.22 16.51 C 49.36 16.71 49.45 17.05 49.50 17.52 C 49.55 17.99 49.58 18.68 49.58 19.55 L 49.58 21 L 49.59 21 C 49.59 21.81 49.57 22.45 49.5 22.91 C 49.43 23.37 49.32 23.70 49.16 23.89 C 49.00 24.08 48.78 24.17 48.51 24.17 C 48.30 24.17 48.11 24.12 47.94 24.02 C 47.76 23.92 47.62 23.78 47.51 23.58 L 47.51 17.25 C 47.59 16.95 47.75 16.70 47.96 16.50 C 48.17 16.31 48.39 16.22 48.63 16.22 z \" id=\"ytp-id-20\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#ytp-id-20"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": "ytp-id-5",
+              "id": "duplicate-id",
+              "impact": "minor",
+              "message": "Document has no static elements that share the same id attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<path d=\"M25,17 L17,17 L17,23 L25,23 L25,17 L25,17 Z M29,25 L29,10.98 C29,9.88 28.1,9 27,9 L9,9 C7.9,9 7,9.88 7,10.98 L7,25 C7,26.1 7.9,27 9,27 L27,27 C28.1,27 29,26.1 29,25 L29,25 Z M27,25.02 L9,25.02 L9,10.97 L27,10.97 L27,25.02 L27,25.02 Z\" fill=\"#fff\" id=\"ytp-id-5\"></path>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#ytp-id-5"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": "ytp-id-21",
+              "id": "duplicate-id",
+              "impact": "minor",
+              "message": "Document has no static elements that share the same id attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<path d=\"M27,9 L9,9 C7.9,9 7,9.9 7,11 L7,14 L9,14 L9,11 L27,11 L27,25 L20,25 L20,27 L27,27 C28.1,27 29,26.1 29,25 L29,11 C29,9.9 28.1,9 27,9 L27,9 Z M7,24 L7,27 L10,27 C10,25.34 8.66,24 7,24 L7,24 Z M7,20 L7,22 C9.76,22 12,24.24 12,27 L14,27 C14,23.13 10.87,20 7,20 L7,20 Z M7,16 L7,18 C11.97,18 16,22.03 16,27 L18,27 C18,20.92 13.07,16 7,16 L7,16 Z\" fill=\"#fff\" id=\"ytp-id-21\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#ytp-id-21"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": "ytp-id-6",
+              "id": "duplicate-id",
+              "impact": "minor",
+              "message": "Document has no static elements that share the same id attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<path class=\"ytp-svg-fill\" d=\"m 10,16 2,0 0,-4 4,0 0,-2 L 10,10 l 0,6 0,0 z\" id=\"ytp-id-6\"></path>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#ytp-id-6"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": "ytp-id-7",
+              "id": "duplicate-id",
+              "impact": "minor",
+              "message": "Document has no static elements that share the same id attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<path class=\"ytp-svg-fill\" d=\"m 20,10 0,2 4,0 0,4 2,0 L 26,10 l -6,0 0,0 z\" id=\"ytp-id-7\"></path>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#ytp-id-7"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": "ytp-id-8",
+              "id": "duplicate-id",
+              "impact": "minor",
+              "message": "Document has no static elements that share the same id attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<path class=\"ytp-svg-fill\" d=\"m 24,24 -4,0 0,2 L 26,26 l 0,-6 -2,0 0,4 0,0 z\" id=\"ytp-id-8\"></path>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#ytp-id-8"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": "ytp-id-9",
+              "id": "duplicate-id",
+              "impact": "minor",
+              "message": "Document has no static elements that share the same id attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<path class=\"ytp-svg-fill\" d=\"M 12,20 10,20 10,26 l 6,0 0,-2 -4,0 0,-4 0,0 z\" id=\"ytp-id-9\"></path>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#ytp-id-9"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.parsing",
+        "wcag2a",
+        "wcag411"
+      ]
+    },
+    {
+      "description": "Ensures headings have discernible text",
+      "help": "Headings should not be empty",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/empty-heading?application=webdriverjs",
+      "id": "empty-heading",
+      "impact": null,
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": null,
+              "id": "has-visible-text",
+              "impact": "minor",
+              "message": "Element has text that is visible to screen readers",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<h1>Flashing content doesn't have warning</h1>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "h1"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.name-role-value",
+        "best-practice"
+      ]
+    },
+    {
+      "description": "Ensures <iframe> and <frame> elements contain the axe-core script",
+      "help": "Frames should be tested with axe-core",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/frame-tested?application=webdriverjs",
+      "id": "frame-tested",
+      "impact": null,
+      "nodes": [
+        {
+          "all": [
+            {
+              "data": null,
+              "id": "frame-tested",
+              "impact": "critical",
+              "message": "The iframe was tested with axe-core",
+              "relatedNodes": []
+            }
+          ],
+          "any": [],
+          "html": "<iframe allowfullscreen=\"\" frameborder=\"0\" height=\"315\" src=\"https://www.youtube.com/embed/gwoQRKCEHgY\" title=\"Banned Pokemon scene\" width=\"560\" cd_frame_id_=\"09d552de3d7d2fd8f70b8342d268afc6\"></iframe>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.structure",
+        "review-item",
+        "best-practice"
+      ]
+    },
+    {
+      "description": "Ensures <iframe> and <frame> elements contain a unique title attribute",
+      "help": "Frames should have a unique title attribute",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/frame-title-unique?application=webdriverjs",
+      "id": "frame-title-unique",
+      "impact": null,
+      "nodes": [
+        {
+          "all": [],
+          "any": [],
+          "html": "<iframe allowfullscreen=\"\" frameborder=\"0\" height=\"315\" src=\"https://www.youtube.com/embed/gwoQRKCEHgY\" title=\"Banned Pokemon scene\" width=\"560\" cd_frame_id_=\"09d552de3d7d2fd8f70b8342d268afc6\"></iframe>",
+          "impact": null,
+          "none": [
+            {
+              "data": "banned pokemon scene",
+              "id": "unique-frame-title",
+              "impact": "serious",
+              "message": "Element's title attribute is unique",
+              "relatedNodes": []
+            }
+          ],
+          "target": [
+            "iframe"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ]
+    },
+    {
+      "description": "Ensures <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/frame-title?application=webdriverjs",
+      "id": "frame-title",
+      "impact": null,
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": null,
+              "id": "non-empty-title",
+              "impact": "serious",
+              "message": "Element has a title attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<iframe allowfullscreen=\"\" frameborder=\"0\" height=\"315\" src=\"https://www.youtube.com/embed/gwoQRKCEHgY\" title=\"Banned Pokemon scene\" width=\"560\" cd_frame_id_=\"09d552de3d7d2fd8f70b8342d268afc6\"></iframe>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag241",
+        "wcag412",
+        "section508",
+        "section508.22.i"
+      ]
+    },
+    {
+      "description": "Ensures the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/heading-order?application=webdriverjs",
+      "id": "heading-order",
+      "impact": null,
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "headingOrder": [
+                  {
+                    "ancestry": [
+                      "html > body > h1:nth-child(1)"
+                    ],
+                    "level": 1
+                  },
+                  {
+                    "ancestry": [
+                      "html > body > main:nth-child(2) > iframe"
+                    ],
+                    "level": -1
+                  }
+                ]
+              },
+              "id": "heading-order",
+              "impact": "moderate",
+              "message": "Heading order valid",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<h1>Flashing content doesn't have warning</h1>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "h1"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ]
+    },
+    {
+      "description": "Ensures every HTML document has a lang attribute",
+      "help": "<html> element must have a lang attribute",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/html-has-lang?application=webdriverjs",
+      "id": "html-has-lang",
+      "impact": null,
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": null,
+              "id": "has-lang",
+              "impact": "serious",
+              "message": "The <html> element has a lang attribute",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<html lang=\"en\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "html"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.language",
+        "wcag2a",
+        "wcag311",
+        "ACT"
+      ]
+    },
+    {
+      "description": "Ensures the lang attribute of the <html> element has a valid value",
+      "help": "<html> element must have a valid value for the lang attribute",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/html-lang-valid?application=webdriverjs",
+      "id": "html-lang-valid",
+      "impact": null,
+      "nodes": [
+        {
+          "all": [],
+          "any": [],
+          "html": "<html lang=\"en\">",
+          "impact": null,
+          "none": [
+            {
+              "data": null,
+              "id": "valid-lang",
+              "impact": "serious",
+              "message": "Value of lang attribute is included in the list of valid languages",
+              "relatedNodes": []
+            }
+          ],
+          "target": [
+            "html"
+          ]
+        },
+        {
+          "all": [],
+          "any": [],
+          "html": "<html lang=\"en\" dir=\"ltr\" data-cast-api-enabled=\"true\">",
+          "impact": null,
+          "none": [
+            {
+              "data": null,
+              "id": "valid-lang",
+              "impact": "serious",
+              "message": "Value of lang attribute is included in the list of valid languages",
+              "relatedNodes": []
+            }
+          ],
+          "target": [
+            "iframe",
+            "html"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.language",
+        "wcag2a",
+        "wcag311",
+        "ACT"
+      ]
+    },
+    {
+      "description": "Ensure that links with the same accessible name serve a similar purpose",
+      "help": "Links with the same name have a similar purpose",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/identical-links-same-purpose?application=webdriverjs",
+      "id": "identical-links-same-purpose",
+      "impact": null,
+      "nodes": [
+        {
+          "all": [
+            {
+              "data": {
+                "name": "visit youtube to search for more videos",
+                "urlProps": {
+                  "filename": "",
+                  "hash": "",
+                  "hostname": "www.youtube.com",
+                  "pathname": "/",
+                  "port": "",
+                  "protocol": "http:",
+                  "search": {}
+                }
+              },
+              "id": "identical-links-same-purpose",
+              "impact": "minor",
+              "message": "There are no other links with the same name, that go to a different URL",
+              "relatedNodes": []
+            }
+          ],
+          "any": [],
+          "html": "<a class=\"ytp-small-redirect\" href=\"https://www.youtube.com\" target=\"_blank\" aria-label=\"Visit YouTube to search for more videos\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-small-redirect"
+          ]
+        },
+        {
+          "all": [
+            {
+              "data": {
+                "name": "watch on youtube",
+                "urlProps": {
+                  "filename": "",
+                  "hash": "",
+                  "hostname": "www.youtube.com",
+                  "pathname": "/watch/",
+                  "port": "",
+                  "protocol": "http:",
+                  "search": {
+                    "feature": "emb_imp_woyt",
+                    "v": "gwoQRKCEHgY"
+                  }
+                }
+              },
+              "id": "identical-links-same-purpose",
+              "impact": "minor",
+              "message": "There are no other links with the same name, that go to a different URL",
+              "relatedNodes": []
+            }
+          ],
+          "any": [],
+          "html": "<a class=\"ytp-impression-link\" aria-label=\"Watch on YouTube\" target=\"_blank\" href=\"https://www.youtube.com/watch?v=gwoQRKCEHgY&amp;feature=emb_imp_woyt\" data-layer=\"7\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-impression-link"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.semantics",
+        "wcag2aaa",
+        "wcag249",
+        "best-practice"
+      ]
+    },
+    {
+      "description": "Ensures the main landmark is at top level",
+      "help": "Main landmark should not be contained in another landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/landmark-main-is-top-level?application=webdriverjs",
+      "id": "landmark-main-is-top-level",
+      "impact": null,
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "role": "main"
+              },
+              "id": "landmark-is-top-level",
+              "impact": "moderate",
+              "message": "The main landmark is at the top level.",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<main>\n    <iframe allowfullscreen=\"\" frameborder=\"0\" height=\"315\" src=\"https://www.youtube.com/embed/gwoQRKCEHgY\" title=\"Banned Pokemon scene\" width=\"560\" cd_frame_id_=\"09d552de3d7d2fd8f70b8342d268afc6\"></iframe>\n  </main>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "main"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ]
+    },
+    {
+      "description": "Ensures the document has at most one main landmark",
+      "help": "Document should not have more than one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/landmark-no-duplicate-main?application=webdriverjs",
+      "id": "landmark-no-duplicate-main",
+      "impact": null,
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": null,
+              "id": "page-no-duplicate-main",
+              "impact": "moderate",
+              "message": "Document does not have more than one main landmark",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<main>\n    <iframe allowfullscreen=\"\" frameborder=\"0\" height=\"315\" src=\"https://www.youtube.com/embed/gwoQRKCEHgY\" title=\"Banned Pokemon scene\" width=\"560\" cd_frame_id_=\"09d552de3d7d2fd8f70b8342d268afc6\"></iframe>\n  </main>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "main"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ]
+    },
+    {
+      "description": "Ensures the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/landmark-one-main?application=webdriverjs",
+      "id": "landmark-one-main",
+      "impact": null,
+      "nodes": [
+        {
+          "all": [
+            {
+              "data": null,
+              "id": "page-has-main",
+              "impact": "moderate",
+              "message": "Document has at least one main landmark",
+              "relatedNodes": [
+                {
+                  "html": "<main>\n    <iframe allowfullscreen=\"\" frameborder=\"0\" height=\"315\" src=\"https://www.youtube.com/embed/gwoQRKCEHgY\" title=\"Banned Pokemon scene\" width=\"560\" cd_frame_id_=\"09d552de3d7d2fd8f70b8342d268afc6\"></iframe>\n  </main>",
+                  "target": [
+                    "main"
+                  ]
+                }
+              ]
+            }
+          ],
+          "any": [],
+          "html": "<html lang=\"en\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "html"
+          ]
+        },
+        {
+          "all": [
+            {
+              "data": null,
+              "id": "page-has-main",
+              "impact": "moderate",
+              "message": "Document has at least one main landmark",
+              "relatedNodes": []
+            }
+          ],
+          "any": [],
+          "html": "<html lang=\"en\" dir=\"ltr\" data-cast-api-enabled=\"true\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "html"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ]
+    },
+    {
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "help": "Ensures landmarks are unique",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/landmark-unique?application=webdriverjs",
+      "id": "landmark-unique",
+      "impact": null,
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "accessibleText": null,
+                "role": "main"
+              },
+              "id": "landmark-is-unique",
+              "impact": "moderate",
+              "message": "Landmarks must have a unique role or role/label/title (i.e. accessible name) combination",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<main>\n    <iframe allowfullscreen=\"\" frameborder=\"0\" height=\"315\" src=\"https://www.youtube.com/embed/gwoQRKCEHgY\" title=\"Banned Pokemon scene\" width=\"560\" cd_frame_id_=\"09d552de3d7d2fd8f70b8342d268afc6\"></iframe>\n  </main>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "main"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ]
+    },
+    {
+      "description": "Ensures links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/link-name?application=webdriverjs",
+      "id": "link-name",
+      "impact": null,
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": null,
+              "id": "aria-label",
+              "impact": "serious",
+              "message": "aria-label attribute exists and is not empty",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<a class=\"ytp-small-redirect\" href=\"https://www.youtube.com\" target=\"_blank\" aria-label=\"Visit YouTube to search for more videos\">",
+          "impact": null,
+          "none": [
+            {
+              "data": null,
+              "id": "focusable-no-name",
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text",
+              "relatedNodes": []
+            }
+          ],
+          "target": [
+            "iframe",
+            ".ytp-small-redirect"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": null,
+              "id": "aria-label",
+              "impact": "serious",
+              "message": "aria-label attribute exists and is not empty",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<a class=\"ytp-impression-link\" aria-label=\"Watch on YouTube\" target=\"_blank\" href=\"https://www.youtube.com/watch?v=gwoQRKCEHgY&amp;feature=emb_imp_woyt\" data-layer=\"7\">",
+          "impact": null,
+          "none": [
+            {
+              "data": null,
+              "id": "focusable-no-name",
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text",
+              "relatedNodes": []
+            }
+          ],
+          "target": [
+            "iframe",
+            ".ytp-impression-link"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "wcag244",
+        "section508",
+        "section508.22.a",
+        "ACT"
+      ]
+    },
+    {
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/page-has-heading-one?application=webdriverjs",
+      "id": "page-has-heading-one",
+      "impact": null,
+      "nodes": [
+        {
+          "all": [
+            {
+              "data": null,
+              "id": "page-has-heading-one",
+              "impact": "moderate",
+              "message": "Page has at least one level-one heading",
+              "relatedNodes": [
+                {
+                  "html": "<h1>Flashing content doesn't have warning</h1>",
+                  "target": [
+                    "h1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "any": [],
+          "html": "<html lang=\"en\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "html"
+          ]
+        },
+        {
+          "all": [
+            {
+              "data": null,
+              "id": "page-has-heading-one",
+              "impact": "moderate",
+              "message": "Page has at least one level-one heading",
+              "relatedNodes": []
+            }
+          ],
+          "any": [],
+          "html": "<html lang=\"en\" dir=\"ltr\" data-cast-api-enabled=\"true\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "html"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ]
+    },
+    {
+      "description": "Ensures all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/region?application=webdriverjs",
+      "id": "region",
+      "impact": "moderate",
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "isIframe": false
+              },
+              "id": "region",
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<main>\n    <iframe allowfullscreen=\"\" frameborder=\"0\" height=\"315\" src=\"https://www.youtube.com/embed/gwoQRKCEHgY\" title=\"Banned Pokemon scene\" width=\"560\" cd_frame_id_=\"09d552de3d7d2fd8f70b8342d268afc6\"></iframe>\n  </main>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "main"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "isIframe": true
+              },
+              "id": "region",
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<iframe allowfullscreen=\"\" frameborder=\"0\" height=\"315\" src=\"https://www.youtube.com/embed/gwoQRKCEHgY\" title=\"Banned Pokemon scene\" width=\"560\" cd_frame_id_=\"09d552de3d7d2fd8f70b8342d268afc6\"></iframe>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "isIframe": false
+              },
+              "id": "region",
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<div id=\"player\" style=\"width: 100%; height: 100%;\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#player"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "isIframe": false
+              },
+              "id": "region",
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<div class=\"html5-video-player ytp-exp-bottom-control-flexbox ytp-embed ytp-embed-playlist ytp-menu-shown ytp-hide-info-bar ytp-embed-error\" tabindex=\"-1\" id=\"movie_player\" data-version=\"/s/player/9da24d97/player_ias.vflset/en_US/base.js\" aria-label=\"YouTube Video Player\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#movie_player"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "isIframe": false
+              },
+              "id": "region",
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<div class=\"ytp-paid-content-overlay\" aria-live=\"assertive\" aria-atomic=\"true\" data-layer=\"4\"><div class=\"ytp-button ytp-paid-content-overlay-text\" style=\"display: none;\"></div></div>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-paid-content-overlay"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "isIframe": false
+              },
+              "id": "region",
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<div class=\"ytp-suggested-action\" data-layer=\"4\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-suggested-action"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "isIframe": false
+              },
+              "id": "region",
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<div class=\"ytp-error\" role=\"alert\" data-layer=\"4\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-error"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "isIframe": false
+              },
+              "id": "region",
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<div class=\"ytp-error-content\" style=\"padding-top: 125.5px;\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-error-content"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "isIframe": false
+              },
+              "id": "region",
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<div class=\"ytp-error-icon-container\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-error-icon-container"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "isIframe": false
+              },
+              "id": "region",
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<svg fill=\"#fff\" viewBox=\"0 0 48 48\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "svg[viewBox=\"\\30 \\ 0\\ 48\\ 48\"]"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "isIframe": false
+              },
+              "id": "region",
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<path d=\"M0 0h48v48H0V0z\" fill=\"none\"></path>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "path[d=\"M0\\ 0h48v48H0V0z\"]"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "isIframe": false
+              },
+              "id": "region",
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<path d=\"M22 30h4v4h-4zm0-16h4v12h-4zm1.99-10C12.94 4 4 12.95 4 24s8.94 20 19.99 20S44 35.05 44 24 35.04 4 23.99 4zM24 40c-8.84 0-16-7.16-16-16S15.16 8 24 8s16 7.16 16 16-7.16 16-16 16z\" fill-opacity=\"0.7\"></path>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "path[fill-opacity=\"\\30 \\.7\"]"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "isIframe": false
+              },
+              "id": "region",
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<div class=\"ytp-error-content-wrap\"><div class=\"ytp-error-content-wrap-reason\"><span>This video is unavailable.</span></div><div class=\"ytp-error-content-wrap-subreason\"></div></div>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-error-content-wrap"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "isIframe": false
+              },
+              "id": "region",
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<div class=\"ytp-error-content-wrap-reason\"><span>This video is unavailable.</span></div>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-error-content-wrap-reason"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "isIframe": false
+              },
+              "id": "region",
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<span>This video is unavailable.</span>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-error-content-wrap-reason > span"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "isIframe": false
+              },
+              "id": "region",
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<div class=\"ytp-error-content-wrap-subreason\"></div>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-error-content-wrap-subreason"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "isIframe": false
+              },
+              "id": "region",
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<a class=\"ytp-small-redirect\" href=\"https://www.youtube.com\" target=\"_blank\" aria-label=\"Visit YouTube to search for more videos\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-small-redirect"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "isIframe": false
+              },
+              "id": "region",
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<svg fill=\"#fff\" height=\"100%\" viewBox=\"0 0 24 24\" width=\"100%\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "svg[viewBox=\"\\30 \\ 0\\ 24\\ 24\"][fill=\"\\#fff\"][height=\"\\31 00\\%\"]"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "isIframe": false
+              },
+              "id": "region",
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<path d=\"M0 0h24v24H0V0z\" fill=\"none\"></path>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "path[d=\"M0\\ 0h24v24H0V0z\"]"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "isIframe": false
+              },
+              "id": "region",
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<path d=\"M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15V9l5.2 3-5.2 3z\"></path>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "svg[viewBox=\"\\30 \\ 0\\ 24\\ 24\"][fill=\"\\#fff\"][height=\"\\31 00\\%\"] > path:nth-child(2)"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "isIframe": false
+              },
+              "id": "region",
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<a class=\"ytp-impression-link\" aria-label=\"Watch on YouTube\" target=\"_blank\" href=\"https://www.youtube.com/watch?v=gwoQRKCEHgY&amp;feature=emb_imp_woyt\" data-layer=\"7\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-impression-link"
+          ]
+        },
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "isIframe": false
+              },
+              "id": "region",
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<noscript><div class=\"player-unavailable\"><h1 class=\"message\">An error occurred.</h1><div class=\"submessage\">Unable to execute JavaScript.</div></div></noscript>",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "noscript"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ]
+    },
+    {
+      "description": "Ensures tabindex attribute values are not greater than 0",
+      "help": "Elements should not have tabindex greater than zero",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/tabindex?application=webdriverjs",
+      "id": "tabindex",
+      "impact": null,
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": null,
+              "id": "tabindex",
+              "impact": "serious",
+              "message": "Element does not have a tabindex greater than 0",
+              "relatedNodes": []
+            }
+          ],
+          "html": "<div class=\"html5-video-player ytp-exp-bottom-control-flexbox ytp-embed ytp-embed-playlist ytp-menu-shown ytp-hide-info-bar ytp-embed-error\" tabindex=\"-1\" id=\"movie_player\" data-version=\"/s/player/9da24d97/player_ias.vflset/en_US/base.js\" aria-label=\"YouTube Video Player\">",
+          "impact": null,
+          "none": [],
+          "target": [
+            "iframe",
+            "#movie_player"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ]
+    }
+  ],
+  "testEngine": {
+    "name": "axe-core",
+    "version": "4.3.3"
+  },
+  "testEnvironment": {
+    "orientationAngle": 0,
+    "orientationType": "landscape-primary",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/92.0.4515.159 Safari/537.36",
+    "windowHeight": 600,
+    "windowWidth": 800
+  },
+  "testRunner": {
+    "name": "axe"
+  },
+  "timestamp": "2021-09-05T18:46:50.734Z",
+  "toolOptions": {
+    "reporter": "v1"
+  },
+  "url": "https://alphagov.github.io/accessibility-tool-audit/tests/multimedia-flashing-content-doesnt-have-warning.html",
+  "violations": [
+    {
+      "description": "Ensures all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/region?application=webdriverjs",
+      "id": "region",
+      "impact": "moderate",
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "isIframe": false
+              },
+              "id": "region",
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks",
+              "relatedNodes": []
+            }
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+          "html": "<h1>Flashing content doesn't have warning</h1>",
+          "impact": "moderate",
+          "none": [],
+          "target": [
+            "h1"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ]
+    }
+  ]
+}

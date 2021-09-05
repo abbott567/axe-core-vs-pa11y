@@ -1,0 +1,12 @@
+[
+  {
+    "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+    "type": "error",
+    "typeCode": 1,
+    "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+    "context": "<a href=\"http://www.google.com\"></a>",
+    "selector": "html > body > main > a",
+    "runner": "htmlcs",
+    "runnerExtras": {}
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "documentTitle": "Accessibility tools audit test - Error messages - no suggestion for corrections given, e.g. required format - GDS accessibility team",
+  "pageUrl": "https://alphagov.github.io/accessibility-tool-audit/tests/forms-error-messages-no-suggestion-for-corrections-given-e.g.-required-format.html",
+  "issues": [
+    {
+      "code": "WCAG2AA.Principle3.Guideline3_2.3_2_2.H32.2",
+      "type": "error",
+      "typeCode": 1,
+      "message": "This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute \"submit\" or \"image\", or BUTTON elements with type \"submit\" or omitted/invalid.",
+      "context": "<form><label class=\"required-format-n...</form>",
+      "selector": "html > body > main > form",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    }
+  ]
+}

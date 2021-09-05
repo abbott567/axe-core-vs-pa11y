@@ -1,0 +1,16 @@
+{
+  "documentTitle": "Accessibility tools audit test - Table has an empty table header - GDS accessibility team",
+  "pageUrl": "https://alphagov.github.io/accessibility-tool-audit/tests/tables-table-has-an-empty-table-header.html",
+  "issues": [
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.H63.1",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Not all th elements in this table have a scope attribute. These cells should contain a scope attribute to identify their association with td elements.",
+      "context": "<table>\n<caption>Shelly's Daughters</c...</table>",
+      "selector": "html > body > main > table",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    }
+  ]
+}

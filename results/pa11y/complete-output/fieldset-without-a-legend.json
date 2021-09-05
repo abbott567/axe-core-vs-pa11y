@@ -1,0 +1,36 @@
+{
+  "documentTitle": "Accessibility tools audit test - Fieldset without a legend - GDS accessibility team",
+  "pageUrl": "https://alphagov.github.io/accessibility-tool-audit/tests/forms-fieldset-without-a-legend.html",
+  "issues": [
+    {
+      "code": "WCAG2AA.Principle3.Guideline3_2.3_2_2.H32.2",
+      "type": "error",
+      "typeCode": 1,
+      "message": "This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute \"submit\" or \"image\", or BUTTON elements with type \"submit\" or omitted/invalid.",
+      "context": "<form><fieldset>\n            I am a f...</form>",
+      "selector": "html > body > main > form",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Fieldset.Name",
+      "type": "error",
+      "typeCode": 1,
+      "message": "This fieldset element does not have a name available to an accessibility API. Valid names are: legend element, aria-label undefined, aria-labelledby undefined.",
+      "context": "<fieldset>\n            I am a fieldset wi...</fieldset>",
+      "selector": "html > body > main > form > fieldset",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.H71.NoLegend",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Fieldset does not contain a legend element. All fieldsets should contain a legend element that describes a description of the field group.",
+      "context": "<fieldset>\n            I am a fieldset wi...</fieldset>",
+      "selector": "html > body > main > form > fieldset",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.H49.Center",
+    "type": "error",
+    "typeCode": 1,
+    "message": "Presentational markup used that has become obsolete in HTML5.",
+    "context": "<center>This text is centred using the ...</center>",
+    "selector": "html > body > main > center",
+    "runner": "htmlcs",
+    "runnerExtras": {}
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "code": "WCAG2AA.Principle3.Guideline3_2.3_2_2.H32.2",
+    "type": "error",
+    "typeCode": 1,
+    "message": "This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute \"submit\" or \"image\", or BUTTON elements with type \"submit\" or omitted/invalid.",
+    "context": "<form><h4>Do you already have a perso...</form>",
+    "selector": "html > body > main > form",
+    "runner": "htmlcs",
+    "runnerExtras": {}
+  }
+]

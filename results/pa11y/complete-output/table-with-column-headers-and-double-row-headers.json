@@ -1,0 +1,16 @@
+{
+  "documentTitle": "Accessibility tools audit test - Table with column headers and double row headers - GDS accessibility team",
+  "pageUrl": "https://alphagov.github.io/accessibility-tool-audit/tests/tables-table-with-column-headers-and-double-row-headers.html",
+  "issues": [
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.H43.HeadersRequired",
+      "type": "error",
+      "typeCode": 1,
+      "message": "The relationship between td elements and their associated th elements is not defined. As this table has multiple levels of th elements, you must use the headers attribute on td elements.",
+      "context": "<table>\n<caption>Road Traffic at Junct...</table>",
+      "selector": "html > body > main > table",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    }
+  ]
+}

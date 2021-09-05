@@ -1,0 +1,12 @@
+[
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.H49.Font",
+    "type": "error",
+    "typeCode": 1,
+    "message": "Presentational markup used that has become obsolete in HTML5.",
+    "context": "<font face=\"aria\" size=\"5\">The size and face of this text ...</font>",
+    "selector": "html > body > main > p > font",
+    "runner": "htmlcs",
+    "runnerExtras": {}
+  }
+]

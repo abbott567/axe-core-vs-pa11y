@@ -1,0 +1,39 @@
+{
+  "incomplete": [],
+  "voilations": [
+    {
+      "description": "Ensures all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/region?application=webdriverjs",
+      "id": "region",
+      "impact": "moderate",
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "isIframe": false
+              },
+              "id": "region",
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks",
+              "relatedNodes": []
+            }
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+          "html": "<h1>Lightbox - focus is not moved immediately to lightbox</h1>",
+          "impact": "moderate",
+          "none": [],
+          "target": [
+            "h1"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ]
+    }
+  ]
+}

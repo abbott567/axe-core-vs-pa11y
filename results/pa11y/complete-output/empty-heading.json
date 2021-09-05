@@ -1,0 +1,16 @@
+{
+  "documentTitle": "Accessibility tools audit test - Empty heading - GDS accessibility team",
+  "pageUrl": "https://alphagov.github.io/accessibility-tool-audit/tests/headings-empty-heading.html",
+  "issues": [
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.H42.2",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Heading tag found with no content. Text that is not intended as a heading should not be marked up with heading tags.",
+      "context": "<h4></h4>",
+      "selector": "html > body > main > h4",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    }
+  ]
+}

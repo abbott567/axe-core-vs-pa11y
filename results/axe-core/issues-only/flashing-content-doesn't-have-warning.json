@@ -1,0 +1,203 @@
+{
+  "incomplete": [
+    {
+      "description": "Ensures ARIA attributes are allowed for an element's role",
+      "help": "Elements must only use allowed ARIA attributes",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/aria-allowed-attr?application=webdriverjs",
+      "id": "aria-allowed-attr",
+      "impact": "serious",
+      "nodes": [
+        {
+          "all": [],
+          "any": [],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not well supported on the element and the text content will be used instead: aria-label",
+          "html": "<div class=\"html5-video-player ytp-exp-bottom-control-flexbox ytp-embed ytp-embed-playlist ytp-menu-shown ytp-hide-info-bar ytp-embed-error\" tabindex=\"-1\" id=\"movie_player\" data-version=\"/s/player/9da24d97/player_ias.vflset/en_US/base.js\" aria-label=\"YouTube Video Player\">",
+          "impact": "serious",
+          "none": [
+            {
+              "data": [
+                "aria-label"
+              ],
+              "id": "aria-prohibited-attr",
+              "impact": "serious",
+              "message": "ARIA attribute is not well supported on the element and the text content will be used instead: aria-label",
+              "relatedNodes": []
+            }
+          ],
+          "target": [
+            "iframe",
+            "#movie_player"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412"
+      ]
+    },
+    {
+      "description": "Ensures each page has at least one mechanism for a user to bypass navigation and jump straight to the content",
+      "help": "Page must have means to bypass repeated blocks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/bypass?application=webdriverjs",
+      "id": "bypass",
+      "impact": "serious",
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": null,
+              "id": "internal-link-present",
+              "impact": "serious",
+              "message": "No valid skip link found",
+              "relatedNodes": []
+            },
+            {
+              "data": null,
+              "id": "header-present",
+              "impact": "serious",
+              "message": "Page does not have a heading",
+              "relatedNodes": []
+            },
+            {
+              "data": null,
+              "id": "landmark",
+              "impact": "serious",
+              "message": "Page does not have a landmark region",
+              "relatedNodes": []
+            }
+          ],
+          "failureSummary": "Fix any of the following:\n  No valid skip link found\n  Page does not have a heading\n  Page does not have a landmark region",
+          "html": "<html lang=\"en\" dir=\"ltr\" data-cast-api-enabled=\"true\">",
+          "impact": "serious",
+          "none": [],
+          "target": [
+            "iframe",
+            "html"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.keyboard",
+        "wcag2a",
+        "wcag241",
+        "section508",
+        "section508.22.o"
+      ]
+    },
+    {
+      "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+      "help": "Elements must have sufficient color contrast",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/color-contrast?application=webdriverjs",
+      "id": "color-contrast",
+      "impact": "serious",
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "contrastRatio": 0,
+                "expectedContrastRatio": "4.5:1",
+                "fgColor": "#ffffff",
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap"
+              },
+              "id": "color-contrast",
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element",
+              "relatedNodes": []
+            }
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+          "html": "<div class=\"ytp-impression-link-text\">Watch on</div>",
+          "impact": "serious",
+          "none": [],
+          "target": [
+            "iframe",
+            ".ytp-impression-link-text"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143"
+      ]
+    },
+    {
+      "description": "Ensures <video> elements have captions",
+      "help": "<video> elements must have captions",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/video-caption?application=webdriverjs",
+      "id": "video-caption",
+      "impact": "critical",
+      "nodes": [
+        {
+          "all": [],
+          "any": [],
+          "failureSummary": "Fix all of the following:\n  Check that captions is available for the element",
+          "html": "<video tabindex=\"-1\" class=\"video-stream html5-main-video\" controlslist=\"nodownload\" style=\"width: 560px; height: 315px; left: 0px; top: -315px;\"></video>",
+          "impact": "critical",
+          "none": [
+            {
+              "data": null,
+              "id": "caption",
+              "impact": "critical",
+              "message": "Check that captions is available for the element",
+              "relatedNodes": []
+            }
+          ],
+          "target": [
+            "iframe",
+            "video"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag122",
+        "section508",
+        "section508.22.a"
+      ]
+    }
+  ],
+  "voilations": [
+    {
+      "description": "Ensures all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/region?application=webdriverjs",
+      "id": "region",
+      "impact": "moderate",
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "isIframe": false
+              },
+              "id": "region",
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks",
+              "relatedNodes": []
+            }
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+          "html": "<h1>Flashing content doesn't have warning</h1>",
+          "impact": "moderate",
+          "none": [],
+          "target": [
+            "h1"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ]
+    }
+  ]
+}

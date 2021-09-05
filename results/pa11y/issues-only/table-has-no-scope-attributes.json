@@ -1,0 +1,12 @@
+[
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.H43,H63",
+    "type": "error",
+    "typeCode": 1,
+    "message": "The relationship between td elements and their associated th elements is not defined. Use either the scope attribute on th elements, or the headers attribute on td elements.",
+    "context": "<table>\n<caption>Opening\ntimes</captio...</table>",
+    "selector": "html > body > main > table",
+    "runner": "htmlcs",
+    "runnerExtras": {}
+  }
+]

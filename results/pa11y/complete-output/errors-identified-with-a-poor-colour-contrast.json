@@ -1,0 +1,26 @@
+{
+  "documentTitle": "Accessibility tools audit test - Errors identified with a poor colour contrast - GDS accessibility team",
+  "pageUrl": "https://alphagov.github.io/accessibility-tool-audit/tests/forms-errors-identified-with-a-poor-colour-contrast.html",
+  "issues": [
+    {
+      "code": "WCAG2AA.Principle3.Guideline3_2.3_2_2.H32.2",
+      "type": "error",
+      "typeCode": 1,
+      "message": "This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute \"submit\" or \"image\", or BUTTON elements with type \"submit\" or omitted/invalid.",
+      "context": "<form class=\"errors-badly-identified error-poor-contrast\">\n<div class=\"validation-summary...</form>",
+      "selector": "html > body > main > form",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+      "type": "error",
+      "typeCode": 1,
+      "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1.24:1. Recommendation:  change background to #897070.",
+      "context": "<div class=\"validation-summary\" role=\"alert\">\n                You need to fi...</div>",
+      "selector": "html > body > main > form > div",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    }
+  ]
+}

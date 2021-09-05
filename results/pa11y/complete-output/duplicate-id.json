@@ -1,0 +1,16 @@
+{
+  "documentTitle": "Accessibility tools audit test - Duplicate id - GDS accessibility team",
+  "pageUrl": "https://alphagov.github.io/accessibility-tool-audit/tests/html-duplicate-id.html",
+  "issues": [
+    {
+      "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Duplicate id attribute value \"nav\" found on the web page.",
+      "context": "<div id=\"nav\">page nav</div>",
+      "selector": "#nav",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    }
+  ]
+}

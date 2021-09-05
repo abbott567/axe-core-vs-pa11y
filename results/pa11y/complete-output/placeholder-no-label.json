@@ -1,0 +1,16 @@
+{
+  "documentTitle": "Accessibility tools audit test - Placeholder no label - GDS accessibility team",
+  "pageUrl": "https://alphagov.github.io/accessibility-tool-audit/tests/forms-placeholder-no-label.html",
+  "issues": [
+    {
+      "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputSearch.Name",
+      "type": "error",
+      "typeCode": 1,
+      "message": "This searchinput element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+      "context": "<input id=\"search-main\" name=\"q\" placeholder=\"Search\" type=\"search\">",
+      "selector": "#search-main",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "incomplete": [],
+  "voilations": [
+    {
+      "description": "Ensures <li> elements are used semantically",
+      "help": "<li> elements must be contained in a <ul> or <ol>",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/listitem?application=webdriverjs",
+      "id": "listitem",
+      "impact": "serious",
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": null,
+              "id": "listitem",
+              "impact": "serious",
+              "message": "List item does not have a <ul>, <ol> parent element",
+              "relatedNodes": []
+            }
+          ],
+          "failureSummary": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element",
+          "html": "<li>\n            no parent\n        </li>",
+          "impact": "serious",
+          "none": [],
+          "target": [
+            "li"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131"
+      ]
+    },
+    {
+      "description": "Ensures all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/region?application=webdriverjs",
+      "id": "region",
+      "impact": "moderate",
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "isIframe": false
+              },
+              "id": "region",
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks",
+              "relatedNodes": []
+            }
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+          "html": "<h1>LI element with no parent</h1>",
+          "impact": "moderate",
+          "none": [],
+          "target": [
+            "h1"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ]
+    }
+  ]
+}

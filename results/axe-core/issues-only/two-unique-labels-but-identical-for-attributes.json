@@ -1,0 +1,86 @@
+{
+  "incomplete": [
+    {
+      "description": "Ensures form field does not have multiple label elements",
+      "help": "Form field must not have multiple label elements",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/form-field-multiple-labels?application=webdriverjs",
+      "id": "form-field-multiple-labels",
+      "impact": "moderate",
+      "nodes": [
+        {
+          "all": [],
+          "any": [],
+          "failureSummary": "Fix all of the following:\n  Multiple label elements is not widely supported in assistive technologies. Ensure the first label contains all necessary information.",
+          "html": "<input id=\"two-labels-day\" type=\"text\">",
+          "impact": "moderate",
+          "none": [
+            {
+              "data": null,
+              "id": "multiple-label",
+              "impact": "moderate",
+              "message": "Multiple label elements is not widely supported in assistive technologies. Ensure the first label contains all necessary information.",
+              "relatedNodes": [
+                {
+                  "html": "<label for=\"two-labels-day\">Date of issue</label>",
+                  "target": [
+                    "form > label[for=\"two-labels-day\"]"
+                  ]
+                },
+                {
+                  "html": "<label for=\"two-labels-day\">Day</label>",
+                  "target": [
+                    "p > label[for=\"two-labels-day\"]"
+                  ]
+                }
+              ]
+            }
+          ],
+          "target": [
+            "#two-labels-day"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.forms",
+        "wcag2a",
+        "wcag332"
+      ]
+    }
+  ],
+  "voilations": [
+    {
+      "description": "Ensures all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.3/region?application=webdriverjs",
+      "id": "region",
+      "impact": "moderate",
+      "nodes": [
+        {
+          "all": [],
+          "any": [
+            {
+              "data": {
+                "isIframe": false
+              },
+              "id": "region",
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks",
+              "relatedNodes": []
+            }
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+          "html": "<h1>Two unique labels, but identical for= attributes</h1>",
+          "impact": "moderate",
+          "none": [],
+          "target": [
+            "h1"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ]
+    }
+  ]
+}
