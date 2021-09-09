@@ -28,7 +28,7 @@ I also do not think we can assume axe-core is better than PA11Y because it finds
 
 What is clear from the results, is that each tool definitely finds things which the other does not. Therefore, from these tests, I would recommend using both axe-core and PA11Y in your acceptance tests. By using both you can expect to find around 35% of known issues.
 
-Using axe-core and PA11Y together is actually really straight forward. You can [read my blog post on combining-axe-core-and-pa11y](/blog/combining-axe-core-and-pa11y)
+Using axe-core and PA11Y together is actually really straight forward. You can [read my blog post on combining-axe-core-and-pa11y](http://www.craigabbott.co.uk/blog/combining-axe-core-and-pa11y)
 
 ## Method
 
